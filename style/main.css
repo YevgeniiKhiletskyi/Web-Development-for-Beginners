@@ -527,7 +527,7 @@
           border-radius: 0; }
           /* line 99, section-form/form.scss */
           .form-col .form-controls .radio-checkbox .radio-visible::before {
-            background: url(../../img/section-form/checkmark.png) center center no-repeat; }
+            background: url(../img/section-form/checkmark.png) center center no-repeat; }
 
 /* line 1, section-map/section-map.scss */
 .section-map {
