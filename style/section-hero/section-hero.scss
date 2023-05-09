@@ -7,9 +7,9 @@
 
 .hero-pattern {
   background: 
-  url(../../img/section-hero/leaves1.png) right 6% bottom 25% / 10% no-repeat,
-  url(../../img/section-hero/bars.png) right 8% bottom 30% / 30% no-repeat,
-  url(../../img/section-hero/pattern.png) right bottom / 40% no-repeat;
+  url(../img/section-hero/leaves1.png) right 6% bottom 25% / 10% no-repeat,
+  url(../img/section-hero/bars.png) right 8% bottom 30% / 30% no-repeat,
+  url(../img/section-hero/pattern.png) right bottom / 40% no-repeat;
   background-color: #61C4D9;
   position: relative;
   
@@ -17,9 +17,9 @@
   &::after {
     content:"";
     background:
-    url(../../img/section-hero/leaves2.png) left 15% bottom 25px/ 30% no-repeat,
-    url(../../img/section-hero/berries1.png) left top -110px / 50% no-repeat,  
-    url(../../img/section-hero/berries2.png) right bottom / 25% no-repeat;
+    url(../img/section-hero/leaves2.png) left 15% bottom 25px/ 30% no-repeat,
+    url(../img/section-hero/berries1.png) left top -110px / 50% no-repeat,  
+    url(../img/section-hero/berries2.png) right bottom / 25% no-repeat;
     width: 700px;
     height: 400px;
     position: absolute;
@@ -30,7 +30,7 @@
   &::before {
     content: "";
     background: 
-    url(../../img/section-hero/leaves3.png) center center /60% no-repeat;
+    url(../img/section-hero/leaves3.png) center center /60% no-repeat;
     width: 100px;
     height: 200px;
     position: absolute;

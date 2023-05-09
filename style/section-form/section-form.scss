@@ -3,11 +3,11 @@
   height: 100vh;
   position: relative;
   position: relative;
-  background: url(../../img/section-form/pattern.svg) center center/cover no-repeat;
+  background: url(../img/section-form/pattern.svg) center center/cover no-repeat;
 
   &::before {
     content: "";
-    background: url(../../img/section-form/berries.png) center center / 75% no-repeat;
+    background: url(../img/section-form/berries.png) center center / 75% no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -17,7 +17,7 @@
 
   &::after {
     content: "";
-    background: url(../../img/section-form/leaves.png) center center / 90% no-repeat;
+    background: url(../img/section-form/leaves.png) center center / 90% no-repeat;
     width: 200px;
     height: 250px;
     position: absolute;

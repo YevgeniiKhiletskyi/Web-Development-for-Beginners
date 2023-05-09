@@ -10,13 +10,13 @@
 
 /* line 8, section-hero/section-hero.scss */
 .hero-pattern {
-  background: url(../../img/section-hero/leaves1.png) right 6% bottom 25%/10% no-repeat, url(../../img/section-hero/bars.png) right 8% bottom 30%/30% no-repeat, url(../../img/section-hero/pattern.png) right bottom/40% no-repeat;
+  background: url(../img/section-hero/leaves1.png) right 6% bottom 25%/10% no-repeat, url(../img/section-hero/bars.png) right 8% bottom 30%/30% no-repeat, url(../img/section-hero/pattern.png) right bottom/40% no-repeat;
   background-color: #61C4D9;
   position: relative; }
   /* line 17, section-hero/section-hero.scss */
   .hero-pattern::after {
     content: "";
-    background: url(../../img/section-hero/leaves2.png) left 15% bottom 25px/30% no-repeat, url(../../img/section-hero/berries1.png) left top -110px/50% no-repeat, url(../../img/section-hero/berries2.png) right bottom/25% no-repeat;
+    background: url(../img/section-hero/leaves2.png) left 15% bottom 25px/30% no-repeat, url(../img/section-hero/berries1.png) left top -110px/50% no-repeat, url(../img/section-hero/berries2.png) right bottom/25% no-repeat;
     width: 700px;
     height: 400px;
     position: absolute;
@@ -25,7 +25,7 @@
   /* line 30, section-hero/section-hero.scss */
   .hero-pattern::before {
     content: "";
-    background: url(../../img/section-hero/leaves3.png) center center/60% no-repeat;
+    background: url(../img/section-hero/leaves3.png) center center/60% no-repeat;
     width: 100px;
     height: 200px;
     position: absolute;
@@ -214,7 +214,7 @@
   /* line 9, section-benefits/section-benefits.scss */
   .section-benefits::before {
     content: "";
-    background: url(../../img/section-benefits/raspberries.png) left center/85% no-repeat;
+    background: url(../img/section-benefits/raspberries.png) left center/85% no-repeat;
     width: 300px;
     height: 500px;
     position: absolute;
@@ -297,7 +297,7 @@
   /* line 7, section-reviews/section-reviews.scss */
   .section-reviews::before {
     content: "";
-    background: url(../../img/section-reviews/reviews-background/berries1.png) left center/75% no-repeat;
+    background: url(../img/section-reviews/reviews-background/berries1.png) left center/75% no-repeat;
     width: 300px;
     height: 500px;
     position: absolute;
@@ -305,7 +305,7 @@
   /* line 16, section-reviews/section-reviews.scss */
   .section-reviews::after {
     content: "";
-    background: url(../../img/section-reviews/reviews-background/berries2.png) center center/75% no-repeat;
+    background: url(../img/section-reviews/reviews-background/berries2.png) center center/75% no-repeat;
     width: 300px;
     height: 250px;
     position: absolute;
@@ -412,11 +412,11 @@
   height: 100vh;
   position: relative;
   position: relative;
-  background: url(../../img/section-form/pattern.svg) center center/cover no-repeat; }
+  background: url(../img/section-form/pattern.svg) center center/cover no-repeat; }
   /* line 8, section-form/section-form.scss */
   .section-form::before {
     content: "";
-    background: url(../../img/section-form/berries.png) center center/75% no-repeat;
+    background: url(../img/section-form/berries.png) center center/75% no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -425,7 +425,7 @@
   /* line 18, section-form/section-form.scss */
   .section-form::after {
     content: "";
-    background: url(../../img/section-form/leaves.png) center center/90% no-repeat;
+    background: url(../img/section-form/leaves.png) center center/90% no-repeat;
     width: 200px;
     height: 250px;
     position: absolute;
