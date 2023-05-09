@@ -1,0 +1,642 @@
+@import url(./normalize.css);
+@import url(./layout.css);
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
+/* line 1, section-hero/section-hero.scss */
+.section-hero {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  z-index: 50; }
+
+/* line 8, section-hero/section-hero.scss */
+.hero-pattern {
+  background: url(../../img/section-hero/leaves1.png) right 6% bottom 25%/10% no-repeat, url(../../img/section-hero/bars.png) right 8% bottom 30%/30% no-repeat, url(../../img/section-hero/pattern.png) right bottom/40% no-repeat;
+  background-color: #61C4D9;
+  position: relative; }
+  /* line 17, section-hero/section-hero.scss */
+  .hero-pattern::after {
+    content: "";
+    background: url(../../img/section-hero/leaves2.png) left 15% bottom 25px/30% no-repeat, url(../../img/section-hero/berries1.png) left top -110px/50% no-repeat, url(../../img/section-hero/berries2.png) right bottom/25% no-repeat;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    bottom: -70px; }
+  /* line 30, section-hero/section-hero.scss */
+  .hero-pattern::before {
+    content: "";
+    background: url(../../img/section-hero/leaves3.png) center center/60% no-repeat;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    bottom: -74px; }
+
+/* line 1, section-hero/header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-left: 80px;
+  margin-right: 80px; }
+  /* line 9, section-hero/header.scss */
+  .header .header-col_left {
+    display: flex; }
+    /* line 12, section-hero/header.scss */
+    .header .header-col_left .logo-link {
+      display: flex; }
+      /* line 15, section-hero/header.scss */
+      .header .header-col_left .logo-link .logo-icon {
+        fill: #fff; }
+    /* line 20, section-hero/header.scss */
+    .header .header-col_left .header-menu {
+      width: 638px;
+      font-size: 18px;
+      margin-top: 8px;
+      margin-left: 43px; }
+      /* line 26, section-hero/header.scss */
+      .header .header-col_left .header-menu .menu-list {
+        display: flex;
+        justify-content: space-between; }
+        /* line 30, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-benefits:hover {
+          color: #365A49; }
+        /* line 34, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-slider:hover {
+          color: #365A49; }
+        /* line 38, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-team:hover {
+          color: #365A49; }
+        /* line 42, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-products:hover {
+          color: #365A49; }
+        /* line 46, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-reviews:hover {
+          color: #365A49; }
+        /* line 50, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-player:hover {
+          color: #365A49; }
+        /* line 54, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-map:hover {
+          color: #365A49; }
+        /* line 58, section-hero/header.scss */
+        .header .header-col_left .header-menu .menu-list .menu-link {
+          text-decoration: none; }
+  /* line 65, section-hero/header.scss */
+  .header .header-col_right {
+    display: flex; }
+    /* line 68, section-hero/header.scss */
+    .header .header-col_right .phone-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 5px; }
+      /* line 74, section-hero/header.scss */
+      .header .header-col_right .phone-link .phone-icon {
+        fill: #fff; }
+    /* line 79, section-hero/header.scss */
+    .header .header-col_right .header-phone {
+      font-size: 24px;
+      text-decoration: none;
+      font-style: normal; }
+
+/* line 1, section-hero/title.scss */
+.title-col {
+  display: flex;
+  align-items: flex-start;
+  width: 37%;
+  min-height: 300px;
+  flex-direction: column;
+  margin-left: 80px; }
+  /* line 9, section-hero/title.scss */
+  .title-col .title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  /* line 17, section-hero/title.scss */
+  .title-col .subtitle {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 25px; }
+
+/* line 1, button/button.scss */
+.btn {
+  font-size: 16px;
+  border-radius: 35px;
+  padding: 20px 38px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none; }
+  /* line 12, button/button.scss */
+  .btn-title {
+    background: #fff;
+    color: #365A49; }
+    /* line 16, button/button.scss */
+    .btn-title:hover {
+      background: #0b4d3c;
+      color: #fff; }
+  /* line 23, button/button.scss */
+  .btn-form {
+    background: #0b4d3c;
+    color: #fff;
+    margin-right: 10px; }
+    /* line 28, button/button.scss */
+    .btn-form:hover {
+      background: #fff;
+      color: #365A49; }
+    /* line 33, button/button.scss */
+    .btn-form_transparent {
+      background: transparent;
+      color: #497870;
+      text-transform: none; }
+
+/* line 1, section-hero/bullet-text.scss */
+.bullet-text {
+  margin-left: 80px;
+  margin-bottom: 50px; }
+  /* line 5, section-hero/bullet-text.scss */
+  .bullet-text .bullet-list {
+    display: flex; }
+    /* line 8, section-hero/bullet-text.scss */
+    .bullet-text .bullet-list .bullet-item {
+      display: flex; }
+      /* line 11, section-hero/bullet-text.scss */
+      .bullet-text .bullet-list .bullet-item .bullet-icon {
+        margin-right: 8px; }
+        /* line 14, section-hero/bullet-text.scss */
+        .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-leaves_icon {
+          width: 44px;
+          height: 42px;
+          fill: #fff; }
+        /* line 20, section-hero/bullet-text.scss */
+        .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-auto_icon {
+          width: 55px;
+          height: 41px;
+          fill: #fff; }
+        /* line 26, section-hero/bullet-text.scss */
+        .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-paper_icon {
+          width: 45px;
+          height: 42px;
+          fill: #fff; }
+      /* line 33, section-hero/bullet-text.scss */
+      .bullet-text .bullet-list .bullet-item .bullet-leaves {
+        display: flex;
+        width: 90px;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-right: 35px; }
+      /* line 41, section-hero/bullet-text.scss */
+      .bullet-text .bullet-list .bullet-item .bullet-auto {
+        display: flex;
+        width: 72px;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-right: 35px; }
+      /* line 49, section-hero/bullet-text.scss */
+      .bullet-text .bullet-list .bullet-item .bullet-paper {
+        display: flex;
+        width: 64px;
+        font-size: 16px;
+        line-height: 1.2; }
+
+/* line 1, section-benefits/section-benefits.scss */
+.section-benefits {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  color: #000;
+  position: relative;
+  z-index: 40; }
+  /* line 9, section-benefits/section-benefits.scss */
+  .section-benefits::before {
+    content: "";
+    background: url(../../img/section-benefits/raspberries.png) left center/85% no-repeat;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    bottom: -167px; }
+
+/* line 1, section-benefits/benefits-headline.scss */
+.headline-cap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 95px; }
+  /* line 6, section-benefits/benefits-headline.scss */
+  .headline-cap .headline-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  /* line 14, section-benefits/benefits-headline.scss */
+  .headline-cap .headline-subtitle {
+    padding: 0 29%; }
+
+/* line 1, section-benefits/benefits.scss */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 69px;
+  margin-right: 69px; }
+  /* line 7, section-benefits/benefits.scss */
+  .benefits-list .benefits {
+    text-align: center; }
+  /* line 11, section-benefits/benefits.scss */
+  .benefits-list .benefits-item {
+    flex: 1;
+    padding: 0 4%;
+    position: relative; }
+    /* line 16, section-benefits/benefits.scss */
+    .benefits-list .benefits-item:first-child {
+      padding-left: 0; }
+    /* line 20, section-benefits/benefits.scss */
+    .benefits-list .benefits-item:last-child {
+      padding-right: 0; }
+    /* line 24, section-benefits/benefits.scss */
+    .benefits-list .benefits-item .benefits-image {
+      margin-bottom: 55px; }
+      /* line 27, section-benefits/benefits.scss */
+      .benefits-list .benefits-item .benefits-image .benefits-wrap {
+        height: 70px;
+        display: flex;
+        justify-content: center; }
+        /* line 32, section-benefits/benefits.scss */
+        .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-happy {
+          width: 65px;
+          height: 69px;
+          fill: #292929; }
+        /* line 38, section-benefits/benefits.scss */
+        .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-smile {
+          width: 68px;
+          height: 68px;
+          fill: #292929; }
+        /* line 44, section-benefits/benefits.scss */
+        .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-hand {
+          width: 79px;
+          height: 63px;
+          fill: #292929; }
+    /* line 54, section-benefits/benefits.scss */
+    .benefits-list .benefits-item .benefits-text .benefits-title {
+      font-size: 27px;
+      font-weight: bold;
+      margin-bottom: 16px; }
+    /* line 60, section-benefits/benefits.scss */
+    .benefits-list .benefits-item .benefits-text .benefits-desc {
+      line-height: 1.2; }
+
+/* line 1, section-reviews/section-reviews.scss */
+.section-reviews {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 30; }
+  /* line 7, section-reviews/section-reviews.scss */
+  .section-reviews::before {
+    content: "";
+    background: url(../../img/section-reviews/reviews-background/berries1.png) left center/75% no-repeat;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    bottom: -235px; }
+  /* line 16, section-reviews/section-reviews.scss */
+  .section-reviews::after {
+    content: "";
+    background: url(../../img/section-reviews/reviews-background/berries2.png) center center/75% no-repeat;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    right: 40px;
+    top: 40px; }
+
+/* line 1, section-reviews/reviews-headline.scss */
+.reviews-cap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; }
+  /* line 7, section-reviews/reviews-headline.scss */
+  .reviews-cap .reviews-title {
+    font-size: 49px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px; }
+
+/* line 1, section-reviews/reviews.scss */
+.reviews {
+  display: flex;
+  flex-direction: column; }
+  /* line 6, section-reviews/reviews.scss */
+  .reviews .reviews-main {
+    background: url(../../img/section-reviews/reviews-background/pattern.svg) right -8px/16% no-repeat;
+    margin-left: 80px;
+    margin-right: 120px;
+    margin-bottom: 80px;
+    position: relative; }
+    /* line 23, section-reviews/reviews.scss */
+    .reviews .reviews-main .reviews-main_list {
+      position: relative; }
+      /* line 26, section-reviews/reviews.scss */
+      .reviews .reviews-main .reviews-main_list .reviews-main_item {
+        position: static;
+        opacity: 1;
+        pointer-events: unset; }
+        /* line 31, section-reviews/reviews.scss */
+        .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
+          display: flex; }
+          /* line 34, section-reviews/reviews.scss */
+          .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
+            width: 254px;
+            height: 260px;
+            margin-right: 20px;
+            margin-left: 43px; }
+            /* line 40, section-reviews/reviews.scss */
+            .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar_img {
+              display: flex;
+              object-fit: cover;
+              width: 100%;
+              height: 100%; }
+          /* line 48, section-reviews/reviews.scss */
+          .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content {
+            flex: 1; }
+            /* line 51, section-reviews/reviews.scss */
+            .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_title {
+              padding-top: 10px;
+              font-size: 29px;
+              font-weight: bold;
+              padding-bottom: 19px; }
+            /* line 58, section-reviews/reviews.scss */
+            .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
+              line-height: 1.2;
+              padding-right: 150px;
+              padding-bottom: 7px; }
+            /* line 64, section-reviews/reviews.scss */
+            .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_author {
+              font-size: 18px;
+              font-weight: bold; }
+  /* line 75, section-reviews/reviews.scss */
+  .reviews .reviews-footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    /* line 80, section-reviews/reviews.scss */
+    .reviews .reviews-footer_list .reviews-footer_item {
+      position: relative;
+      width: 82px;
+      height: 82px;
+      border: 4px solid transparent;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer; }
+      /* line 89, section-reviews/reviews.scss */
+      .reviews .reviews-footer_list .reviews-footer_item.active {
+        border-color: #365A49; }
+      /* line 93, section-reviews/reviews.scss */
+      .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        /* line 99, section-reviews/reviews.scss */
+        .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link .interactive-avatar_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+
+/* line 1, section-form/section-form.scss */
+.section-form {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  position: relative;
+  background: url(../../img/section-form/pattern.svg) center center/cover no-repeat; }
+  /* line 8, section-form/section-form.scss */
+  .section-form::before {
+    content: "";
+    background: url(../../img/section-form/berries.png) center center/75% no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    bottom: 80px; }
+  /* line 18, section-form/section-form.scss */
+  .section-form::after {
+    content: "";
+    background: url(../../img/section-form/leaves.png) center center/90% no-repeat;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    right: 180px;
+    bottom: 100px; }
+
+/* line 1, section-form/form-cap.scss */
+.form-cap {
+  display: flex;
+  justify-content: center;
+  color: #0b4d3c;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 39px; }
+
+/* line 1, section-form/form.scss */
+.form {
+  display: flex;
+  color: #497870;
+  user-select: none;
+  margin-left: 80px;
+  margin-right: 80px; }
+  /* line 8, section-form/form.scss */
+  .form-col {
+    flex: 1;
+    margin-right: 17px; }
+    /* line 12, section-form/form.scss */
+    .form-col .form-row {
+      display: flex;
+      margin-bottom: 15px; }
+      /* line 16, section-form/form.scss */
+      .form-col .form-row .form-block {
+        flex: 1;
+        margin-right: 18px; }
+        /* line 20, section-form/form.scss */
+        .form-col .form-row .form-block:last-child {
+          margin-right: 0; }
+        /* line 24, section-form/form.scss */
+        .form-col .form-row .form-block .form-input {
+          width: 100%;
+          padding: 18px  10px;
+          border: 3px solid transparent;
+          border-radius: 4px; }
+          /* line 30, section-form/form.scss */
+          .form-col .form-row .form-block .form-input:focus {
+            border-color: #DEE2BD;
+            border-radius: 5px;
+            outline: none; }
+          /* line 36, section-form/form.scss */
+          .form-col .form-row .form-block .form-input_texterea {
+            height: 182px;
+            resize: none; }
+    /* line 44, section-form/form.scss */
+    .form-col .form-controls {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px; }
+      /* line 49, section-form/form.scss */
+      .form-col .form-controls_checkbox {
+        margin-bottom: 34px; }
+      /* line 53, section-form/form.scss */
+      .form-col .form-controls:last-child {
+        margin-right: 0; }
+      /* line 57, section-form/form.scss */
+      .form-col .form-controls .radio {
+        display: flex;
+        cursor: pointer;
+        user-select: none;
+        margin-right: 10px; }
+        /* line 63, section-form/form.scss */
+        .form-col .form-controls .radio-elem {
+          display: none; }
+          /* line 67, section-form/form.scss */
+          .form-col .form-controls .radio-elem:checked ~ .radio-visible::before {
+            display: block; }
+        /* line 73, section-form/form.scss */
+        .form-col .form-controls .radio .radio-visible {
+          width: 26px;
+          height: 26px;
+          position: relative;
+          border-radius: 50%;
+          background: #ffff;
+          margin-right: 10px; }
+          /* line 81, section-form/form.scss */
+          .form-col .form-controls .radio .radio-visible::before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: #365a49;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+        /* line 96, section-form/form.scss */
+        .form-col .form-controls .radio-checkbox .radio-visible {
+          border-radius: 0; }
+          /* line 99, section-form/form.scss */
+          .form-col .form-controls .radio-checkbox .radio-visible::before {
+            background: url(../../img/section-form/checkmark.png) center center no-repeat; }
+
+/* line 1, section-map/section-map.scss */
+.section-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; }
+
+/* line 1, section-map/map.scss */
+.map {
+  width: 100%;
+  height: 95%; }
+
+/* line 1, section-map/footer.scss */
+.footer-container_content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-bottom: 8px; }
+  /* line 7, section-map/footer.scss */
+  .footer-container_content .footer-contacts {
+    display: flex;
+    flex-direction: column; }
+    /* line 11, section-map/footer.scss */
+    .footer-container_content .footer-contacts .footer-contacts_address {
+      font-size: 21px;
+      font-style: normal; }
+    /* line 16, section-map/footer.scss */
+    .footer-container_content .footer-contacts .footer-phone {
+      display: flex; }
+
+/* line 22, section-map/footer.scss */
+.phone-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px; }
+  /* line 28, section-map/footer.scss */
+  .phone-icon .phone-svg {
+    fill: #497870; }
+
+/* line 33, section-map/footer.scss */
+.footer-link {
+  font-size: 21px;
+  text-decoration: none;
+  font-style: normal;
+  color: #497870; }
+
+/* line 1, section-map/socials.scss */
+.socials-list {
+  display: flex;
+  align-items: center;
+  margin-right: 78px; }
+  /* line 6, section-map/socials.scss */
+  .socials-list .socials-item {
+    margin-right: 20px; }
+    /* line 9, section-map/socials.scss */
+    .socials-list .socials-item:last-child {
+      margin-right: 0; }
+    /* line 13, section-map/socials.scss */
+    .socials-list .socials-item .social-link {
+      display: flex; }
+      /* line 16, section-map/socials.scss */
+      .socials-list .socials-item .social-link .social-fb {
+        width: 20px;
+        height: 20px;
+        fill: #292929; }
+      /* line 22, section-map/socials.scss */
+      .socials-list .socials-item .social-link .social-in {
+        width: 20px;
+        height: 20px;
+        fill: #B3B3B3; }
+      /* line 28, section-map/socials.scss */
+      .socials-list .socials-item .social-link .social-tv {
+        width: 20px;
+        height: 20px;
+        fill: #B3B3B3; }
+
+/* line 1, fixed-menu/fixed-menu.scss */
+.fixed-menu {
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  z-index: 100; }
+
+/* line 8, fixed-menu/fixed-menu.scss */
+.fixed-menu_item {
+  margin-bottom: 5px; }
+  /* line 12, fixed-menu/fixed-menu.scss */
+  .fixed-menu_item--active .fixed-menu_link {
+    border-color: #fff; }
+
+/* line 18, fixed-menu/fixed-menu.scss */
+.fixed-menu_link {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block; }
+  /* line 26, fixed-menu/fixed-menu.scss */
+  .fixed-menu_link::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

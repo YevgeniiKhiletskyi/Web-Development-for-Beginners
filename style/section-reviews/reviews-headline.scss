@@ -1,0 +1,14 @@
+.reviews-cap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+
+  .reviews-title {
+    font-size: 49px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+}

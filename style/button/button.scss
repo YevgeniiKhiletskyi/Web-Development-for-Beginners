@@ -1,0 +1,40 @@
+.btn {
+  font-size: 16px;
+  border-radius: 35px;
+  padding: 20px 38px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  
+  
+  //Section-hero
+  &-title {
+    background: #fff;
+    color: #365A49;
+
+    &:hover {
+      background: #0b4d3c;
+      color: #fff;
+    }
+  }
+
+  //Section-form
+  &-form {
+    background: #0b4d3c;
+    color: #fff;
+    margin-right: 10px;
+
+    &:hover {
+      background: #fff;
+      color: #365A49;
+    }
+
+    &_transparent {
+      background: transparent;
+      color: #497870;
+      text-transform: none;
+    }
+  }
+}
+

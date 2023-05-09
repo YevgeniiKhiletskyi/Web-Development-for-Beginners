@@ -1,0 +1,107 @@
+.form {
+  display: flex;
+  color: #497870;
+  user-select: none;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  &-col {
+    flex: 1;
+    margin-right: 17px;
+
+    .form-row {
+      display: flex;
+      margin-bottom: 15px;
+
+      .form-block {
+        flex: 1;
+        margin-right: 18px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .form-input {
+          width: 100%;
+          padding: 18px  10px;
+          border: 3px solid transparent;
+          border-radius: 4px;
+
+          &:focus {
+            border-color: #DEE2BD;
+            border-radius: 5px;
+            outline: none;
+          }
+
+          &_texterea {
+            height: 182px;
+            resize: none;
+          }
+        }
+      }
+    }
+
+    .form-controls {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+
+      &_checkbox {
+        margin-bottom: 34px;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .radio {
+        display: flex;
+        cursor: pointer;
+        user-select: none;
+        margin-right: 10px;
+
+        &-elem {
+          display: none;
+
+          &:checked ~ .radio-visible {
+            &::before {
+              display: block;
+            }
+          }
+        }
+ 
+        .radio-visible {
+          width: 26px;
+          height: 26px;
+          position: relative;
+          border-radius: 50%;
+          background: #ffff;
+          margin-right: 10px;
+
+          &::before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: #365a49;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        &-checkbox {
+          .radio-visible {
+            border-radius: 0;
+
+            &::before {
+              background: url(../../img/section-form/checkmark.png) center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

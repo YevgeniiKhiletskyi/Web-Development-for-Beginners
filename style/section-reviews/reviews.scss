@@ -1,0 +1,107 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  
+  .reviews-main {
+    background: url(../../img/section-reviews/reviews-background/pattern.svg) right -8px / 16% no-repeat;
+    margin-left: 80px;
+    margin-right: 120px;
+    margin-bottom: 80px;
+    position: relative;
+
+
+    // &::before {
+    //   content: "";
+    //   background: url(../../img/section-reviews/reviews-background/pattern.svg) center center / 56% no-repeat;
+    //   width: 300px;
+    //   height: 250px;
+    //   right: 717px;
+    //   position: absolute;
+    // }
+
+    .reviews-main_list {
+      position: relative;
+  
+      .reviews-main_item {
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
+  
+        .reviews-main_inner {
+          display: flex;
+  
+          .reviews-avatar {
+            width: 254px;
+            height: 260px;
+            margin-right: 20px;
+            margin-left: 43px;
+  
+            &_img {
+              display: flex;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+  
+          .reviews-content {
+            flex: 1;
+  
+            .reviews-content_title {
+              padding-top: 10px;
+              font-size: 29px;
+              font-weight: bold;
+              padding-bottom: 19px;
+            }
+  
+            .reviews-content_text {
+              line-height: 1.2;
+              padding-right: 150px;
+              padding-bottom: 7px;
+            }
+  
+            .reviews-content_author {
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .reviews-footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .reviews-footer_item {
+      position: relative;
+      width: 82px;
+      height: 82px;
+      border: 4px solid transparent;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+
+      &.active {
+        border-color: #365A49;
+      }
+
+      .interactive-avatar_link {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .interactive-avatar_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

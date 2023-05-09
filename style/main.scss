@@ -1,0 +1,46 @@
+
+//x-index
+$z-fixed-menu: 100;
+
+//Normalize
+@import "./normalize.css";
+
+//Setups
+@import "./layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+//Style
+
+//Section-hero
+@import "section-hero/section-hero.scss"; 
+@import "section-hero/header.scss";
+@import "section-hero/title.scss";
+@import "button/button.scss";
+@import "section-hero/bullet-text.scss";
+//Section-benefits
+@import "section-benefits/section-benefits.scss";
+@import "section-benefits/benefits-headline.scss";
+@import "section-benefits/benefits.scss";
+// //Section-slider
+//@import "section-slider/section-slider.scss";
+// //Section-team
+// @import "section-team/section-team.scss";
+// //Section-products
+// @import "section-products/section-products.scss";
+// //Section-reviews
+@import "section-reviews/section-reviews.scss";
+@import "section-reviews/reviews-headline.scss";
+@import "section-reviews/reviews.scss";
+// //Section-player
+// @import "section-player/section-player.scss";
+// //Section-form
+@import "section-form/section-form.scss";
+@import "section-form/form-cap.scss";
+@import "section-form/form.scss";
+// //Section-map
+@import "section-map/section-map.scss";
+@import "section-map/map.scss";
+@import "section-map/footer.scss";
+@import "section-map/socials.scss";
+//Fixed-menu
+@import "fixed-menu/fixed-menu.scss";

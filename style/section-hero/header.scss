@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  .header-col_left {
+    display: flex;
+  
+    .logo-link {
+      display: flex;
+   
+      .logo-icon {
+        fill: #fff;
+      }
+    }
+
+    .header-menu {
+      width: 638px;
+      font-size: 18px;
+      margin-top: 8px;
+      margin-left: 43px;
+    
+      .menu-list {
+        display: flex;
+        justify-content: space-between;
+        
+        .menu-benefits:hover {
+          color: #365A49;
+        }
+        
+        .menu-slider:hover {
+          color: #365A49;
+        }
+        
+        .menu-team:hover {
+          color: #365A49;
+        }
+        
+        .menu-products:hover {
+          color: #365A49;
+        }
+        
+        .menu-reviews:hover {
+          color: #365A49;
+        }
+        
+        .menu-player:hover {
+          color: #365A49;
+        }
+        
+        .menu-map:hover {
+          color: #365A49;
+        }
+    
+        .menu-link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .header-col_right {
+    display: flex;
+
+    .phone-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 5px;
+   
+      .phone-icon {
+        fill: #fff;
+      }
+    }
+  
+    .header-phone {
+      font-size: 24px;
+      text-decoration: none;
+      font-style: normal;
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
