@@ -3,20 +3,20 @@
   color: #497870;
   flex-wrap: wrap;
   user-select: none;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: rem(80px);
+  margin-right: rem(80px);
 
   &-col {
     flex: 1;
-    margin-right: 17px;
+    margin-right: rem(17px);
 
     .form-row {
       display: flex;
-      margin-bottom: 15px;
+      margin-bottom: rem(15px);
 
       .form-block {
         flex: 1;
-        margin-right: 18px;
+        margin-right: rem(18px);
 
         &:last-child {
           margin-right: 0;
@@ -24,18 +24,18 @@
 
         .form-input {
           width: 100%;
-          padding: 18px  10px;
-          border: 3px solid transparent;
-          border-radius: 4px;
+          padding: rem(18px)  rem(10px);
+          border: rem(3px) solid transparent;
+          border-radius: rem(4px);
 
           &:focus {
             border-color: #DEE2BD;
-            border-radius: 5px;
+            border-radius: rem(5px);
             outline: none;
           }
 
           &_texterea {
-            height: 182px;
+            height: rem(182px);
             resize: none;
           }
         }
@@ -45,10 +45,10 @@
     .form-controls {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 10px;
+      margin-bottom: rem(10px);
 
       &_checkbox {
-        margin-bottom: 34px;
+        margin-bottom: rem(34px);
       }
   
       &:last-child {
@@ -59,7 +59,7 @@
         display: flex;
         cursor: pointer;
         user-select: none;
-        margin-right: 10px;
+        margin-right: rem(10px);
 
         &-elem {
           display: none;
@@ -72,17 +72,17 @@
         }
  
         .radio-visible {
-          width: 26px;
-          height: 26px;
+          width: rem(26px);
+          height: rem(26px);
           position: relative;
           border-radius: 50%;
           background: #ffff;
-          margin-right: 10px;
+          margin-right: rem(10px);
 
           &::before {
             content: "";
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             background: #365a49;
             border-radius: 50%;
             position: absolute;

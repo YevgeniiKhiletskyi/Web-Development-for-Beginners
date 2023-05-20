@@ -8,20 +8,20 @@
   &::before {
     content: "";
     background: url(../img/section-form/berries.png) center center / 75% no-repeat;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     position: absolute;
-    left: 150px;
-    bottom: 80px;
+    left: rem(150px);
+    bottom: rem(80px);
   }
 
   &::after {
     content: "";
     background: url(../img/section-form/leaves.png) center center / 90% no-repeat;
-    width: 200px;
-    height: 250px;
+    width: rem(200px);
+    height: rem(250px);
     position: absolute;
-    right: 180px;
-    bottom: 100px;
+    right: rem(180px);
+    bottom: rem(100px);
   }
 }

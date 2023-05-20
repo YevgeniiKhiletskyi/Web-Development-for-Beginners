@@ -1,14 +1,14 @@
 .headline-cap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 95px;
+  margin-bottom: rem(95px);
 
   .headline-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
   }
 
   .headline-subtitle {

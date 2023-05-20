@@ -7,19 +7,19 @@
   &::before {
     content: "";
     background: url(../img/section-reviews/reviews-background/berries1.png) left center / 75% no-repeat;
-    width: 300px;
-    height: 500px;
+    width: rem(300px);
+    height: rem(500px);
     position: absolute;
-    bottom: -235px;
+    bottom: rem(-235px);
   }
 
   &::after {
     content: "";
     background: url(../img/section-reviews/reviews-background/berries2.png) center center / 75% no-repeat;
-    width: 300px;
-    height: 250px;
+    width: rem(300px);
+    height: rem(250px);
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: rem(40px);
+    top: rem(40px);
   }
 }

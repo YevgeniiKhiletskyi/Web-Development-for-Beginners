@@ -17,24 +17,24 @@
   &::after {
     content:"";
     background:
-    url(../img/section-hero/leaves2.png) left 15% bottom 25px/ 30% no-repeat,
-    url(../img/section-hero/berries1.png) left top -110px / 50% no-repeat,  
+    url(../img/section-hero/leaves2.png) left 15% bottom 11%/ 30% no-repeat,
+    url(../img/section-hero/berries1.png) left top -150% / 50% no-repeat,  
     url(../img/section-hero/berries2.png) right bottom / 25% no-repeat;
-    width: 700px;
-    height: 400px;
+    width: rem(700px);
+    height: rem(400px);
     position: absolute;
-    right: 200px;
-    bottom: -70px;
+    right: rem(200px);
+    bottom: rem(-70px);
   }
 
   &::before {
     content: "";
     background: 
     url(../img/section-hero/leaves3.png) center center /60% no-repeat;
-    width: 100px;
-    height: 200px;
+    width: rem(100px);
+    height: rem(200px);
     position: absolute;
     left: 10%;
-    bottom: -74px;
+    bottom: rem(-74px);
   }
 }

@@ -1,6 +1,6 @@
 .bullet-text {
-  margin-left: 80px;
-  margin-bottom: 50px;
+  margin-left: rem(80px);
+  margin-bottom: rem(50px);
 
   .bullet-list {
     display: flex;
@@ -10,47 +10,47 @@
       display: flex;
       
       .bullet-icon {
-        margin-right: 8px;
+        margin-right: rem(8px);
 
         .bullet-leaves_icon {
-          width: 44px;
-          height: 42px;
+          width: rem(44px);
+          height: rem(42px);
           fill: #fff
         }
   
         .bullet-auto_icon {
-          width: 55px;
-          height: 41px;
+          width: rem(55px);
+          height: rem(41px);
           fill: #fff
         }
   
         .bullet-paper_icon {
-          width: 45px;
-          height: 42px;
+          width: rem(45px);
+          height: rem(42px);
           fill: #fff
         }
       }
       
       .bullet-leaves {
         display: flex;
-        width: 90px;
-        font-size: 16px;
+        width: rem(90px);
+        font-size: rem(16px);
         line-height: 1.2;
-        margin-right: 35px;
+        margin-right: rem(35px);
       }
     
       .bullet-auto {
         display: flex;
-        width: 72px;
-        font-size: 16px;
+        width: rem(72px);
+        font-size: rem(16px);
         line-height: 1.2;
-        margin-right: 35px;
+        margin-right: rem(35px);
       }
     
       .bullet-paper {
         display: flex;
-        width: 64px;
-        font-size: 16px;
+        width: rem(64px);
+        font-size: rem(16px);
         line-height: 1.2;
       }
     }

@@ -9,10 +9,10 @@
   &::before {
   content: "";
   background: url(../img/section-benefits/raspberries.png) left center / 85% no-repeat;
-  width: 300px;
-  height: 500px;
+  width: rem(300px);
+  height: rem(500px);
   position: absolute;
-  bottom: -167px;
+  bottom: rem(-167px);
   }
 }
 

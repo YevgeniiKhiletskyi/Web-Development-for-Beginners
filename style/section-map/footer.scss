@@ -1,15 +1,15 @@
 .footer-container_content {
   display: flex;
   justify-content: space-between;
-  margin-left: 80px;
-  margin-bottom: 8px;
+  margin-left: rem(80px);
+  margin-bottom: rem(8px);
 
   .footer-contacts {
     display: flex;
     flex-direction: column;
 
     .footer-contacts_address {
-      font-size: 21px;
+      font-size: rem(21px);
       font-style: normal;
     }
 
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 5px;
+  margin-right: rem(5px);
 
   .phone-svg {
     fill: #497870;
@@ -31,7 +31,7 @@
 }
 
 .footer-link {
-  font-size: 21px;
+  font-size: rem(21px);
   text-decoration: none;
   font-style: normal;
   color: #497870;
