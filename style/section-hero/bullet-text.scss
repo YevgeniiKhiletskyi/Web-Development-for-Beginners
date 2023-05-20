@@ -4,6 +4,7 @@
 
   .bullet-list {
     display: flex;
+    flex-wrap: wrap;
 
     .bullet-item {
       display: flex;

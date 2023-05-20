@@ -123,64 +123,70 @@ p {
   margin-right: 80px; }
   /* line 9, section-hero/header.scss */
   .header .header-col_left {
-    display: flex; }
-    /* line 12, section-hero/header.scss */
+    display: flex;
+    width: 78%; }
+    /* line 13, section-hero/header.scss */
     .header .header-col_left .logo-link {
       display: flex; }
-      /* line 15, section-hero/header.scss */
+      /* line 16, section-hero/header.scss */
       .header .header-col_left .logo-link .logo-icon {
         fill: #fff; }
-    /* line 20, section-hero/header.scss */
+    /* line 21, section-hero/header.scss */
     .header .header-col_left .header-menu {
-      width: 638px;
+      width: 100%;
       font-size: 18px;
       margin-top: 8px;
       margin-left: 43px; }
-      /* line 26, section-hero/header.scss */
+      /* line 27, section-hero/header.scss */
       .header .header-col_left .header-menu .menu-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between; }
-        /* line 30, section-hero/header.scss */
+        /* line 32, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-benefits:hover {
           color: #365A49; }
-        /* line 34, section-hero/header.scss */
+        /* line 36, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-slider:hover {
           color: #365A49; }
-        /* line 38, section-hero/header.scss */
+        /* line 40, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-team:hover {
           color: #365A49; }
-        /* line 42, section-hero/header.scss */
+        /* line 44, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-products:hover {
           color: #365A49; }
-        /* line 46, section-hero/header.scss */
+        /* line 48, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-reviews:hover {
           color: #365A49; }
-        /* line 50, section-hero/header.scss */
+        /* line 52, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-player:hover {
           color: #365A49; }
-        /* line 54, section-hero/header.scss */
+        /* line 56, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-map:hover {
           color: #365A49; }
-        /* line 58, section-hero/header.scss */
+        /* line 60, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-link {
           text-decoration: none; }
-  /* line 65, section-hero/header.scss */
+  /* line 67, section-hero/header.scss */
   .header .header-col_right {
-    display: flex; }
-    /* line 68, section-hero/header.scss */
+    display: flex;
+    width: 170px; }
+    /* line 71, section-hero/header.scss */
     .header .header-col_right .phone-link {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-right: 5px; }
-      /* line 74, section-hero/header.scss */
+      /* line 77, section-hero/header.scss */
       .header .header-col_right .phone-link .phone-icon {
         fill: #fff; }
-    /* line 79, section-hero/header.scss */
-    .header .header-col_right .header-phone {
-      font-size: 24px;
-      text-decoration: none;
-      font-style: normal; }
+    /* line 82, section-hero/header.scss */
+    .header .header-col_right .header-contacts {
+      width: 143px; }
+      /* line 85, section-hero/header.scss */
+      .header .header-col_right .header-contacts .header-phone {
+        font-size: 24px;
+        text-decoration: none;
+        font-style: normal; }
 
 /* line 1, section-hero/title.scss */
 .title-col {
@@ -240,43 +246,44 @@ p {
   margin-bottom: 50px; }
   /* line 5, section-hero/bullet-text.scss */
   .bullet-text .bullet-list {
-    display: flex; }
-    /* line 8, section-hero/bullet-text.scss */
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 9, section-hero/bullet-text.scss */
     .bullet-text .bullet-list .bullet-item {
       display: flex; }
-      /* line 11, section-hero/bullet-text.scss */
+      /* line 12, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-icon {
         margin-right: 8px; }
-        /* line 14, section-hero/bullet-text.scss */
+        /* line 15, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-leaves_icon {
           width: 44px;
           height: 42px;
           fill: #fff; }
-        /* line 20, section-hero/bullet-text.scss */
+        /* line 21, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-auto_icon {
           width: 55px;
           height: 41px;
           fill: #fff; }
-        /* line 26, section-hero/bullet-text.scss */
+        /* line 27, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-paper_icon {
           width: 45px;
           height: 42px;
           fill: #fff; }
-      /* line 33, section-hero/bullet-text.scss */
+      /* line 34, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-leaves {
         display: flex;
         width: 90px;
         font-size: 16px;
         line-height: 1.2;
         margin-right: 35px; }
-      /* line 41, section-hero/bullet-text.scss */
+      /* line 42, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-auto {
         display: flex;
         width: 72px;
         font-size: 16px;
         line-height: 1.2;
         margin-right: 35px; }
-      /* line 49, section-hero/bullet-text.scss */
+      /* line 50, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-paper {
         display: flex;
         width: 64px;
