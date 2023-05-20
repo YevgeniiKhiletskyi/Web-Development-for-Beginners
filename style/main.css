@@ -543,63 +543,64 @@ p {
 .form {
   display: flex;
   color: #497870;
+  flex-wrap: wrap;
   user-select: none;
   margin-left: 80px;
   margin-right: 80px; }
-  /* line 8, section-form/form.scss */
+  /* line 9, section-form/form.scss */
   .form-col {
     flex: 1;
     margin-right: 17px; }
-    /* line 12, section-form/form.scss */
+    /* line 13, section-form/form.scss */
     .form-col .form-row {
       display: flex;
       margin-bottom: 15px; }
-      /* line 16, section-form/form.scss */
+      /* line 17, section-form/form.scss */
       .form-col .form-row .form-block {
         flex: 1;
         margin-right: 18px; }
-        /* line 20, section-form/form.scss */
+        /* line 21, section-form/form.scss */
         .form-col .form-row .form-block:last-child {
           margin-right: 0; }
-        /* line 24, section-form/form.scss */
+        /* line 25, section-form/form.scss */
         .form-col .form-row .form-block .form-input {
           width: 100%;
           padding: 18px  10px;
           border: 3px solid transparent;
           border-radius: 4px; }
-          /* line 30, section-form/form.scss */
+          /* line 31, section-form/form.scss */
           .form-col .form-row .form-block .form-input:focus {
             border-color: #DEE2BD;
             border-radius: 5px;
             outline: none; }
-          /* line 36, section-form/form.scss */
+          /* line 37, section-form/form.scss */
           .form-col .form-row .form-block .form-input_texterea {
             height: 182px;
             resize: none; }
-    /* line 44, section-form/form.scss */
+    /* line 45, section-form/form.scss */
     .form-col .form-controls {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 10px; }
-      /* line 49, section-form/form.scss */
+      /* line 50, section-form/form.scss */
       .form-col .form-controls_checkbox {
         margin-bottom: 34px; }
-      /* line 53, section-form/form.scss */
+      /* line 54, section-form/form.scss */
       .form-col .form-controls:last-child {
         margin-right: 0; }
-      /* line 57, section-form/form.scss */
+      /* line 58, section-form/form.scss */
       .form-col .form-controls .radio {
         display: flex;
         cursor: pointer;
         user-select: none;
         margin-right: 10px; }
-        /* line 63, section-form/form.scss */
+        /* line 64, section-form/form.scss */
         .form-col .form-controls .radio-elem {
           display: none; }
-          /* line 67, section-form/form.scss */
+          /* line 68, section-form/form.scss */
           .form-col .form-controls .radio-elem:checked ~ .radio-visible::before {
             display: block; }
-        /* line 73, section-form/form.scss */
+        /* line 74, section-form/form.scss */
         .form-col .form-controls .radio .radio-visible {
           width: 26px;
           height: 26px;
@@ -607,7 +608,7 @@ p {
           border-radius: 50%;
           background: #ffff;
           margin-right: 10px; }
-          /* line 81, section-form/form.scss */
+          /* line 82, section-form/form.scss */
           .form-col .form-controls .radio .radio-visible::before {
             content: "";
             width: 14px;
@@ -619,10 +620,10 @@ p {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); }
-        /* line 96, section-form/form.scss */
+        /* line 97, section-form/form.scss */
         .form-col .form-controls .radio-checkbox .radio-visible {
           border-radius: 0; }
-          /* line 99, section-form/form.scss */
+          /* line 100, section-form/form.scss */
           .form-col .form-controls .radio-checkbox .radio-visible::before {
             background: url(../img/section-form/checkmark.png) center center no-repeat; }
 
