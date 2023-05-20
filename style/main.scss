@@ -1,12 +1,37 @@
+//font-size
+$baseFontSize: 18px;
+
+//width-container
+$containerWidth: 1100px;
+
+
+//textColor
+$textColorLight: #497870;
+$textColor: #365A49;
+//colorButton
+$buttonColorLight: #497870;
+$buttonColorDark: #2E4E3F;
+//colorButtonText
+$buttonTextColorLight: #497870;
+$buttonTextColor: #365A49;
+$buttonTextColor-None: #fff;
+$buttonTextColor--None: #000;
+//colorFocus
+$focusColorLight: #DEE2BD;
+//colorCheckbox
+$checboxColor: #365A49;
 
 //x-index
 $z-fixed-menu: 100;
+
+//rem/px
+@import "./media/media.scss";
 
 //Normalize
 @import "./normalize.css";
 
 //Setups
-@import "./layout.css";
+@import "./layout/layout.scss";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
 
 //Style
