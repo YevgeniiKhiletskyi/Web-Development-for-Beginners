@@ -1,14 +1,25 @@
 .reviews {
   display: flex;
   flex-direction: column;
+  
 
   
   .reviews-main {
-    background: url(../../img/section-reviews/reviews-background/pattern.svg) right -8px / 16% no-repeat;
-    margin-left: 80px;
+    
+    margin-left: 123px;
     margin-right: 120px;
     margin-bottom: 80px;
-    position: relative;
+   
+    &::after {
+      content: "";
+      background: url(../../img/section-reviews/reviews-background/pattern.svg) top/ 65% no-repeat;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 480px;
+      right: 30%;
+      z-index: 30;
+    }
 
 
     // &::before {
@@ -22,6 +33,7 @@
 
     .reviews-main_list {
       position: relative;
+      z-index: 40;
   
       .reviews-main_item {
         position: static;
@@ -29,14 +41,14 @@
         pointer-events: unset;
   
         .reviews-main_inner {
+          flex-wrap: wrap;
           display: flex;
   
           .reviews-avatar {
             width: 254px;
             height: 260px;
             margin-right: 20px;
-            margin-left: 43px;
-  
+              
             &_img {
               display: flex;
               object-fit: cover;
