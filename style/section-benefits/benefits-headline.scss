@@ -13,6 +13,10 @@
 
   .headline-subtitle {
     padding: 0 29%;
+
+    @include tablets {
+      padding: 0 25%;
+    }
   }
 }
 

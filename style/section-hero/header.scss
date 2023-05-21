@@ -6,6 +6,10 @@
   margin-left: rem(80px);
   margin-right: rem(80px);
 
+  @include tablets {
+    margin-left: rem(4px);
+  }
+
   .header-col_left {
     display: flex;
     width: 78%;
@@ -61,6 +65,10 @@
           text-decoration: none;
         }
       }
+
+      @include tablets {
+        display: none;
+      }
     }
   }
 
@@ -87,6 +95,9 @@
         text-decoration: none;
         font-style: normal;
       }
+    }
+    @include tablets {
+      display: none;
     }
   }
 }

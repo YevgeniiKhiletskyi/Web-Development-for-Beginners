@@ -5,6 +5,11 @@ $baseFontSize: 18px;
 $containerWidth: 1100px;
 
 
+//breacpoints
+$tablets: 768px;
+$phones: 480px;
+
+
 //textColor
 $textColorLight: #497870;
 $textColor: #365A49;
@@ -36,9 +41,13 @@ $z-fixed-menu: 100;
 
 //Style
 
+//page
+@import "page/page.scss";
 //Section-hero
-@import "section-hero/section-hero.scss"; 
+@import "section-hero/section-hero.scss";
+// @import "section-hero/container-hero.scss"; 
 @import "section-hero/header.scss";
+@import "section-hero/burger.scss";
 @import "section-hero/title.scss";
 @import "button/button.scss";
 @import "section-hero/bullet-text.scss";

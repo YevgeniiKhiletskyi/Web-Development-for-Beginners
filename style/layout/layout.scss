@@ -6,7 +6,7 @@ body {
   font-family: 'Alegreya Sans', sans-serif;  /* выбор шрифта */
   color: #001822;                      /* цвет шрифта */
   line-height: 1.42;                     /* междустрочный пробел */
-  background: #fff;                 /* цвет фона */
+  // background: #fff;                 /* цвет фона */
   -webkit-font-smoothing: antialiased;   /* свойства для сглаживания шрифта */
   margin: 0 0;
 }
@@ -47,7 +47,28 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  // background-color: #61C4D9;
   height: 100vh;
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   background: 
+  //   url(../img/section-hero/leaves1.png) right 6% bottom 25% / 10% no-repeat,
+  //   url(../img/section-hero/bars.png) center / 65% no-repeat,
+  //   url(../img/section-hero/pattern.png) right bottom / 100% no-repeat;
+  //   position: absolute;
+  //   right: 0;
+  //   bottom:0;
+  //   width: 35vw;
+  //   height: 85vh;
+  //   z-index: 5;
+  // }
+
+  // @include tablets {
+  //   justify-content: center;
+  // }
 }
 
 .container-benefits {
@@ -68,5 +89,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
+
+

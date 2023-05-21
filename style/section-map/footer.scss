@@ -1,10 +1,10 @@
-.footer-container_content {
+.footer-content {
   display: flex;
   justify-content: space-between;
-  margin-left: rem(80px);
-  margin-bottom: rem(8px);
+  background-color: #fff;
 
   .footer-contacts {
+    margin-left: rem(80px);
     display: flex;
     flex-direction: column;
 

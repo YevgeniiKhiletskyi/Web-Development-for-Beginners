@@ -3,21 +3,35 @@
   color: #497870;
   flex-wrap: wrap;
   user-select: none;
-  margin-left: rem(80px);
-  margin-right: rem(80px);
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    width: rem(474px);
+    margin: 0;
+  }
 
   &-col {
     flex: 1;
     margin-right: rem(17px);
 
+    @include tablets {
+      margin-right: 0;
+    }
+
     .form-row {
       display: flex;
       margin-bottom: rem(15px);
 
+      @include tablets {
+        height: rem(62px);
+        margin-bottom: 12px;
+      }
+ 
       .form-block {
         flex: 1;
         margin-right: rem(18px);
-
+   
         &:last-child {
           margin-right: 0;
         }
@@ -28,6 +42,10 @@
           border: rem(3px) solid transparent;
           border-radius: rem(4px);
 
+          &_align {
+            text-align: center;
+          }
+
           &:focus {
             border-color: #DEE2BD;
             border-radius: rem(5px);
@@ -37,72 +55,96 @@
           &_texterea {
             height: rem(182px);
             resize: none;
+
+            @include tablets {
+              height: 130%;
+            }
+          }
+
+          @include tablets {
+            padding: rem(5px) rem(5px);
           }
         }
       }
     }
 
-    .form-controls {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: rem(10px);
+    .form-controls{
 
-      &_checkbox {
-        margin-bottom: rem(34px);
+      @include tablets {
+        margin-top: rem(65px);
       }
-  
-      &:last-child {
-        margin-right: 0;
-      }
-
-      .radio {
+     
+      .form-control {
         display: flex;
-        cursor: pointer;
-        user-select: none;
-        margin-right: rem(10px);
-
-        &-elem {
-          display: none;
-
-          &:checked ~ .radio-visible {
-            &::before {
-              display: block;
+        flex-wrap: wrap;
+        margin-bottom: rem(10px);
+          
+        &_checkbox {
+          margin-bottom: rem(34px);
+        }
+    
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        .radio {
+          display: flex;
+          cursor: pointer;
+          user-select: none;
+          margin-right: rem(10px);
+  
+          &-elem {
+            display: none;
+  
+            &:checked ~ .radio-visible {
+              &::before {
+                display: block;
+              }
             }
           }
-        }
- 
-        .radio-visible {
-          width: rem(26px);
-          height: rem(26px);
-          position: relative;
-          border-radius: 50%;
-          background: #ffff;
-          margin-right: rem(10px);
-
-          &::before {
-            content: "";
-            width: rem(14px);
-            height: rem(14px);
-            background: #365a49;
-            border-radius: 50%;
-            position: absolute;
-            display: none;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
-
-        &-checkbox {
+   
           .radio-visible {
-            border-radius: 0;
-
+            width: rem(26px);
+            height: rem(26px);
+            position: relative;
+            border-radius: 50%;
+            background: #ffff;
+            margin-right: rem(10px);
+  
             &::before {
-              background: url(../img/section-form/checkmark.png) center center no-repeat;
+              content: "";
+              width: rem(14px);
+              height: rem(14px);
+              background: #365a49;
+              border-radius: 50%;
+              position: absolute;
+              display: none;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+  
+          &-checkbox {
+            .radio-visible {
+              border-radius: 0;
+  
+              &::before {
+                background: url(../img/section-form/checkmark.png) center center no-repeat;
+              }
             }
           }
         }
       }
+      
+      .form-btns {
+
+        @include tablets {
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+     }
     }
   }
 }

@@ -11,6 +11,11 @@
     height: rem(500px);
     position: absolute;
     bottom: rem(-235px);
+
+    @include tablets {
+      width: rem(200px);
+      height: rem(400px);
+    }
   }
 
   &::after {
@@ -21,5 +26,12 @@
     position: absolute;
     right: rem(40px);
     top: rem(40px);
+
+    @include tablets {
+      width: rem(200px);
+      height: rem(190px);
+      top: rem(20px);
+      right: 0;
+    }
   }
 }

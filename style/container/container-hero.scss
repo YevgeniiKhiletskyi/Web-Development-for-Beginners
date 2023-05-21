@@ -1,0 +1,23 @@
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  // background-color: #61C4D9;
+  height: 89vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: 
+    url(../img/section-hero/leaves1.png) right 6% bottom 25% / 10% no-repeat,
+    url(../img/section-hero/bars.png) center / 65% no-repeat,
+    url(../img/section-hero/pattern.png) right bottom / 100% no-repeat;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 35vw;
+    height: 85vh;
+    z-index: 5;
+  }
+}

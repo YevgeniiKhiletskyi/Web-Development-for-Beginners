@@ -14,8 +14,6 @@ body {
   /* цвет шрифта */
   line-height: 1.42;
   /* междустрочный пробел */
-  background: #fff;
-  /* цвет фона */
   -webkit-font-smoothing: antialiased;
   /* свойства для сглаживания шрифта */
   margin: 0 0; }
@@ -59,42 +57,47 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px 10px 0 0;
   height: 100vh; }
 
-/* line 53, layout/layout.scss */
+/* line 74, layout/layout.scss */
 .container-benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
 
-/* line 60, layout/layout.scss */
+/* line 81, layout/layout.scss */
 .container-reviews {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
 
-/* line 67, layout/layout.scss */
+/* line 88, layout/layout.scss */
 .container-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh; }
 
 /* line 1, section-hero/section-hero.scss */
 .section-hero {
   width: 100%;
   height: 100vh;
-  color: #fff;
-  z-index: 50; }
+  color: #fff; }
 
-/* line 8, section-hero/section-hero.scss */
+/* line 15, section-hero/section-hero.scss */
 .hero-pattern {
   background: url(../img/section-hero/leaves1.png) right 6% bottom 25%/10% no-repeat, url(../img/section-hero/bars.png) right 8% bottom 30%/30% no-repeat, url(../img/section-hero/pattern.png) right bottom/40% no-repeat;
-  background-color: #61C4D9;
-  position: relative; }
-  /* line 17, section-hero/section-hero.scss */
+  background-color: #61C4D9; }
+  @media screen and (max-width: 768px) {
+    /* line 15, section-hero/section-hero.scss */
+    .hero-pattern {
+      background: url(../img/section-hero/leaves1.png) right 20% bottom 60%/30% no-repeat, url(../img/section-hero/bars.png) center bottom 70%/60% no-repeat, url(../img/section-hero/pattern.png) right bottom 85%/100% no-repeat;
+      background-color: #61C4D9; } }
+  /* line 30, section-hero/section-hero.scss */
   .hero-pattern::after {
     content: "";
     background: url(../img/section-hero/leaves2.png) left 15% bottom 11%/30% no-repeat, url(../img/section-hero/berries1.png) left top -150%/50% no-repeat, url(../img/section-hero/berries2.png) right bottom/25% no-repeat;
@@ -103,7 +106,16 @@ p {
     position: absolute;
     right: 11.1111111111rem;
     bottom: -3.8888888889rem; }
-  /* line 30, section-hero/section-hero.scss */
+    @media screen and (max-width: 768px) {
+      /* line 30, section-hero/section-hero.scss */
+      .hero-pattern::after {
+        background: url(../img/section-hero/leaves2.png) center bottom/30% no-repeat, url(../img/section-hero/berries1.png) left center/61% no-repeat, url(../img/section-hero/berries2.png) right bottom/24% no-repeat;
+        width: 43%;
+        height: 20%;
+        left: 13.6111111111rem;
+        position: absolute;
+        bottom: 29.4444444444rem; } }
+  /* line 55, section-hero/section-hero.scss */
   .hero-pattern::before {
     content: "";
     background: url(../img/section-hero/leaves3.png) center center/60% no-repeat;
@@ -112,6 +124,10 @@ p {
     position: absolute;
     left: 10%;
     bottom: -4.1111111111rem; }
+    @media screen and (max-width: 768px) {
+      /* line 55, section-hero/section-hero.scss */
+      .hero-pattern::before {
+        display: none; } }
 
 /* line 1, section-hero/header.scss */
 .header {
@@ -121,72 +137,139 @@ p {
   padding-top: 1.3333333333rem;
   margin-left: 4.4444444444rem;
   margin-right: 4.4444444444rem; }
-  /* line 9, section-hero/header.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, section-hero/header.scss */
+    .header {
+      margin-left: 0.2222222222rem; } }
+  /* line 13, section-hero/header.scss */
   .header .header-col_left {
     display: flex;
     width: 78%; }
-    /* line 13, section-hero/header.scss */
+    /* line 17, section-hero/header.scss */
     .header .header-col_left .logo-link {
       display: flex; }
-      /* line 16, section-hero/header.scss */
+      /* line 20, section-hero/header.scss */
       .header .header-col_left .logo-link .logo-icon {
         fill: #fff; }
-    /* line 21, section-hero/header.scss */
+    /* line 25, section-hero/header.scss */
     .header .header-col_left .header-menu {
       width: 100%;
       font-size: 1rem;
       margin-top: 0.4444444444rem;
       margin-left: 2.3888888889rem; }
-      /* line 27, section-hero/header.scss */
+      /* line 31, section-hero/header.scss */
       .header .header-col_left .header-menu .menu-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; }
-        /* line 32, section-hero/header.scss */
+        /* line 36, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-benefits:hover {
           color: #365A49; }
-        /* line 36, section-hero/header.scss */
+        /* line 40, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-slider:hover {
           color: #365A49; }
-        /* line 40, section-hero/header.scss */
+        /* line 44, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-team:hover {
           color: #365A49; }
-        /* line 44, section-hero/header.scss */
+        /* line 48, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-products:hover {
           color: #365A49; }
-        /* line 48, section-hero/header.scss */
+        /* line 52, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-reviews:hover {
           color: #365A49; }
-        /* line 52, section-hero/header.scss */
+        /* line 56, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-player:hover {
           color: #365A49; }
-        /* line 56, section-hero/header.scss */
+        /* line 60, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-map:hover {
           color: #365A49; }
-        /* line 60, section-hero/header.scss */
+        /* line 64, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-link {
           text-decoration: none; }
-  /* line 67, section-hero/header.scss */
+      @media screen and (max-width: 768px) {
+        /* line 25, section-hero/header.scss */
+        .header .header-col_left .header-menu {
+          display: none; } }
+  /* line 75, section-hero/header.scss */
   .header .header-col_right {
     display: flex;
     width: 9.4444444444rem; }
-    /* line 71, section-hero/header.scss */
+    /* line 79, section-hero/header.scss */
     .header .header-col_right .phone-link {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-right: 0.2777777778rem; }
-      /* line 77, section-hero/header.scss */
+      /* line 85, section-hero/header.scss */
       .header .header-col_right .phone-link .phone-icon {
         fill: #fff; }
-    /* line 82, section-hero/header.scss */
+    /* line 90, section-hero/header.scss */
     .header .header-col_right .header-contacts {
       width: 7.9444444444rem; }
-      /* line 85, section-hero/header.scss */
+      /* line 93, section-hero/header.scss */
       .header .header-col_right .header-contacts .header-phone {
         font-size: 1.3333333333rem;
         text-decoration: none;
         font-style: normal; }
+    @media screen and (max-width: 768px) {
+      /* line 75, section-hero/header.scss */
+      .header .header-col_right {
+        display: none; } }
+
+/* line 1, section-hero/burger.scss */
+.burger-span {
+  position: absolute;
+  display: none;
+  right: 0;
+  height: 1.2777777778rem;
+  width: 1.2777777778rem;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  margin-right: 1.4444444444rem; }
+  @media screen and (max-width: 768px) {
+    /* line 1, section-hero/burger.scss */
+    .burger-span {
+      display: flex; } }
+  /* line 18, section-hero/burger.scss */
+  .burger-span.burger-span--active {
+    opacity: 0.7; }
+    /* line 21, section-hero/burger.scss */
+    .burger-span.burger-span--active .burger-span_top {
+      -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+      -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+      transform: translateY(11px) translateX(0) rotate(405deg);
+      border-radius: 0.2777777778rem; }
+    /* line 28, section-hero/burger.scss */
+    .burger-span.burger-span--active .burger-span_middle {
+      opacity: 0; }
+    /* line 32, section-hero/burger.scss */
+    .burger-span.burger-span--active .burger-span_bottom {
+      -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-11px) translateX(0) rotate(-405deg);
+      border-radius: 5px; }
+  /* line 40, section-hero/burger.scss */
+  .burger-span_item {
+    background: #fff;
+    border: none;
+    height: 0.2222222222rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .65s ease;
+    -o-transition: all .65s ease;
+    transition: all .65s ease;
+    cursor: pointer; }
+    /* line 54, section-hero/burger.scss */
+    .burger-span_item:nth-of-type(2) {
+      top: 0.5rem; }
+    /* line 58, section-hero/burger.scss */
+    .burger-span_item:nth-of-type(3) {
+      top: 1rem; }
 
 /* line 1, section-hero/title.scss */
 .title-col {
@@ -195,19 +278,29 @@ p {
   width: 37%;
   min-height: 16.6666666667rem;
   flex-direction: column;
-  margin-left: 4.4444444444rem; }
-  /* line 9, section-hero/title.scss */
+  text-align: center;
+  margin-left: 4.4444444444rem;
+  z-index: 10; }
+  /* line 11, section-hero/title.scss */
   .title-col .title {
     font-size: 2.6666666667rem;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 1.1111111111rem; }
-  /* line 17, section-hero/title.scss */
+  /* line 19, section-hero/title.scss */
   .title-col .subtitle {
     font-size: 1.1666666667rem;
     line-height: 1.3;
     margin-bottom: 1.3888888889rem; }
+  @media screen and (max-width: 768px) {
+    /* line 1, section-hero/title.scss */
+    .title-col {
+      align-items: center;
+      min-width: 100%;
+      min-height: 20.1111111111rem;
+      margin-left: 0;
+      margin-bottom: 14%; } }
 
 /* line 1, button/button.scss */
 .btn {
@@ -243,56 +336,60 @@ p {
 /* line 1, section-hero/bullet-text.scss */
 .bullet-text {
   margin-left: 4.4444444444rem;
-  margin-bottom: 2.7777777778rem; }
-  /* line 5, section-hero/bullet-text.scss */
+  margin-bottom: 2.7777777778rem;
+  z-index: 10; }
+  /* line 6, section-hero/bullet-text.scss */
   .bullet-text .bullet-list {
     display: flex;
     flex-wrap: wrap; }
-    /* line 9, section-hero/bullet-text.scss */
+    /* line 10, section-hero/bullet-text.scss */
     .bullet-text .bullet-list .bullet-item {
       display: flex; }
-      /* line 12, section-hero/bullet-text.scss */
+      /* line 13, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-icon {
         margin-right: 0.4444444444rem; }
-        /* line 15, section-hero/bullet-text.scss */
+        /* line 16, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-leaves_icon {
           width: 2.4444444444rem;
           height: 2.3333333333rem;
           fill: #fff; }
-        /* line 21, section-hero/bullet-text.scss */
+        /* line 22, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-auto_icon {
           width: 3.0555555556rem;
           height: 2.2777777778rem;
           fill: #fff; }
-        /* line 27, section-hero/bullet-text.scss */
+        /* line 28, section-hero/bullet-text.scss */
         .bullet-text .bullet-list .bullet-item .bullet-icon .bullet-paper_icon {
           width: 2.5rem;
           height: 2.3333333333rem;
           fill: #fff; }
-      /* line 34, section-hero/bullet-text.scss */
+      /* line 35, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-leaves {
         display: flex;
         width: 5rem;
         font-size: 0.8888888889rem;
         line-height: 1.2;
         margin-right: 1.9444444444rem; }
-      /* line 42, section-hero/bullet-text.scss */
+      /* line 43, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-auto {
         display: flex;
         width: 4rem;
         font-size: 0.8888888889rem;
         line-height: 1.2;
         margin-right: 1.9444444444rem; }
-      /* line 50, section-hero/bullet-text.scss */
+      /* line 51, section-hero/bullet-text.scss */
       .bullet-text .bullet-list .bullet-item .bullet-paper {
         display: flex;
         width: 3.5555555556rem;
         font-size: 0.8888888889rem;
         line-height: 1.2; }
+  @media screen and (max-width: 768px) {
+    /* line 1, section-hero/bullet-text.scss */
+    .bullet-text {
+      display: none; } }
 
 /* line 1, section-benefits/section-benefits.scss */
 .section-benefits {
-  background-color: #fff;
   width: 100%;
   height: 100vh;
   color: #000;
@@ -306,6 +403,15 @@ p {
     height: 27.7777777778rem;
     position: absolute;
     bottom: -9.2777777778rem; }
+    @media screen and (max-width: 768px) {
+      /* line 9, section-benefits/section-benefits.scss */
+      .section-benefits::before {
+        content: "";
+        background: url(../img/section-benefits/raspberries.png) left center/85% no-repeat;
+        width: 8.3333333333rem;
+        height: 13.8888888889rem;
+        position: absolute;
+        bottom: -3.3333333333rem; } }
 
 /* line 1, section-benefits/benefits-headline.scss */
 .headline-cap {
@@ -322,6 +428,10 @@ p {
   /* line 14, section-benefits/benefits-headline.scss */
   .headline-cap .headline-subtitle {
     padding: 0 29%; }
+    @media screen and (max-width: 768px) {
+      /* line 14, section-benefits/benefits-headline.scss */
+      .headline-cap .headline-subtitle {
+        padding: 0 25%; } }
 
 /* line 1, section-benefits/benefits.scss */
 .benefits-list {
@@ -389,7 +499,12 @@ p {
     height: 27.7777777778rem;
     position: absolute;
     bottom: -13.0555555556rem; }
-  /* line 16, section-reviews/section-reviews.scss */
+    @media screen and (max-width: 768px) {
+      /* line 7, section-reviews/section-reviews.scss */
+      .section-reviews::before {
+        width: 11.1111111111rem;
+        height: 22.2222222222rem; } }
+  /* line 21, section-reviews/section-reviews.scss */
   .section-reviews::after {
     content: "";
     background: url(../img/section-reviews/reviews-background/berries2.png) center center/75% no-repeat;
@@ -398,6 +513,13 @@ p {
     position: absolute;
     right: 2.2222222222rem;
     top: 2.2222222222rem; }
+    @media screen and (max-width: 768px) {
+      /* line 21, section-reviews/section-reviews.scss */
+      .section-reviews::after {
+        width: 11.1111111111rem;
+        height: 10.5555555556rem;
+        top: 1.1111111111rem;
+        right: 0; } }
 
 /* line 1, section-reviews/reviews-headline.scss */
 .reviews-cap {
@@ -422,7 +544,12 @@ p {
     margin-left: 6.8333333333rem;
     margin-right: 6.6666666667rem;
     margin-bottom: 4.4444444444rem; }
-    /* line 13, section-reviews/reviews.scss */
+    @media screen and (max-width: 768px) {
+      /* line 7, section-reviews/reviews.scss */
+      .reviews .reviews-main {
+        margin-left: 0;
+        margin-right: 0; } }
+    /* line 17, section-reviews/reviews.scss */
     .reviews .reviews-main::after {
       content: "";
       background: url(../../img/section-reviews/reviews-background/pattern.svg) top/65% no-repeat;
@@ -432,54 +559,73 @@ p {
       top: 26.6666666667rem;
       right: 30%;
       z-index: 30; }
-    /* line 34, section-reviews/reviews.scss */
+      @media screen and (max-width: 768px) {
+        /* line 17, section-reviews/reviews.scss */
+        .reviews .reviews-main::after {
+          right: 0;
+          top: 22.2222222222rem; } }
+    /* line 43, section-reviews/reviews.scss */
     .reviews .reviews-main .reviews-main_list {
       position: relative;
       z-index: 40; }
-      /* line 38, section-reviews/reviews.scss */
+      /* line 47, section-reviews/reviews.scss */
       .reviews .reviews-main .reviews-main_list .reviews-main_item {
         position: static;
         opacity: 1;
         pointer-events: unset; }
-        /* line 43, section-reviews/reviews.scss */
+        /* line 52, section-reviews/reviews.scss */
         .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
           flex-wrap: wrap;
           display: flex; }
-          /* line 47, section-reviews/reviews.scss */
+          @media screen and (max-width: 768px) {
+            /* line 52, section-reviews/reviews.scss */
+            .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
+              flex-direction: column;
+              align-items: center;
+              text-align: center; } }
+          /* line 62, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
             width: 14.1111111111rem;
             height: 14.4444444444rem;
             margin-right: 1.1111111111rem; }
-            /* line 52, section-reviews/reviews.scss */
+            @media screen and (max-width: 768px) {
+              /* line 62, section-reviews/reviews.scss */
+              .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
+                width: 20%;
+                height: 20%; } }
+            /* line 72, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar_img {
               display: flex;
               object-fit: cover;
               width: 100%;
               height: 100%; }
-          /* line 60, section-reviews/reviews.scss */
+          /* line 80, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content {
             flex: 1; }
-            /* line 63, section-reviews/reviews.scss */
+            /* line 83, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_title {
               padding-top: 0.5555555556rem;
               font-size: 1.6111111111rem;
               font-weight: bold;
               padding-bottom: 1.0555555556rem; }
-            /* line 70, section-reviews/reviews.scss */
+            /* line 90, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
               line-height: 1.2;
-              padding-right: 8.3333333333rem;
-              padding-bottom: 0.3888888889rem; }
-            /* line 76, section-reviews/reviews.scss */
+              padding: 0 8.3333333333rem 0.3888888889rem 0; }
+              @media screen and (max-width: 768px) {
+                /* line 90, section-reviews/reviews.scss */
+                .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
+                  padding: 0; } }
+            /* line 99, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_author {
               font-size: 1rem;
               font-weight: bold; }
-  /* line 87, section-reviews/reviews.scss */
+  /* line 110, section-reviews/reviews.scss */
   .reviews .reviews-footer_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    /* line 92, section-reviews/reviews.scss */
+    /* line 115, section-reviews/reviews.scss */
     .reviews .reviews-footer_list .reviews-footer_item {
       position: relative;
       width: 4.5555555556rem;
@@ -488,16 +634,16 @@ p {
       border-radius: 50%;
       overflow: hidden;
       cursor: pointer; }
-      /* line 101, section-reviews/reviews.scss */
+      /* line 124, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item.active {
         border-color: #365A49; }
-      /* line 105, section-reviews/reviews.scss */
+      /* line 128, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link {
         display: flex;
         position: absolute;
         width: 100%;
         height: 100%; }
-        /* line 111, section-reviews/reviews.scss */
+        /* line 134, section-reviews/reviews.scss */
         .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link .interactive-avatar_img {
           width: 100%;
           height: 100%;
@@ -519,7 +665,11 @@ p {
     position: absolute;
     left: 8.3333333333rem;
     bottom: 4.4444444444rem; }
-  /* line 18, section-form/section-form.scss */
+    @media screen and (max-width: 768px) {
+      /* line 8, section-form/section-form.scss */
+      .section-form::before {
+        display: none; } }
+  /* line 22, section-form/section-form.scss */
   .section-form::after {
     content: "";
     background: url(../img/section-form/leaves.png) center center/90% no-repeat;
@@ -528,6 +678,10 @@ p {
     position: absolute;
     right: 10rem;
     bottom: 5.5555555556rem; }
+    @media screen and (max-width: 768px) {
+      /* line 22, section-form/section-form.scss */
+      .section-form::after {
+        display: none; } }
 
 /* line 1, section-form/form-cap.scss */
 .form-cap {
@@ -544,72 +698,101 @@ p {
   display: flex;
   color: #497870;
   flex-wrap: wrap;
-  user-select: none;
-  margin-left: 4.4444444444rem;
-  margin-right: 4.4444444444rem; }
-  /* line 9, section-form/form.scss */
+  user-select: none; }
+  @media screen and (max-width: 768px) {
+    /* line 1, section-form/form.scss */
+    .form {
+      flex-direction: column;
+      justify-content: center;
+      width: 26.3333333333rem;
+      margin: 0; } }
+  /* line 14, section-form/form.scss */
   .form-col {
     flex: 1;
     margin-right: 0.9444444444rem; }
-    /* line 13, section-form/form.scss */
+    @media screen and (max-width: 768px) {
+      /* line 14, section-form/form.scss */
+      .form-col {
+        margin-right: 0; } }
+    /* line 22, section-form/form.scss */
     .form-col .form-row {
       display: flex;
       margin-bottom: 0.8333333333rem; }
-      /* line 17, section-form/form.scss */
+      @media screen and (max-width: 768px) {
+        /* line 22, section-form/form.scss */
+        .form-col .form-row {
+          height: 3.4444444444rem;
+          margin-bottom: 12px; } }
+      /* line 31, section-form/form.scss */
       .form-col .form-row .form-block {
         flex: 1;
         margin-right: 1rem; }
-        /* line 21, section-form/form.scss */
+        /* line 35, section-form/form.scss */
         .form-col .form-row .form-block:last-child {
           margin-right: 0; }
-        /* line 25, section-form/form.scss */
+        /* line 39, section-form/form.scss */
         .form-col .form-row .form-block .form-input {
           width: 100%;
           padding: 1rem 0.5555555556rem;
           border: 0.1666666667rem solid transparent;
           border-radius: 0.2222222222rem; }
-          /* line 31, section-form/form.scss */
+          /* line 45, section-form/form.scss */
+          .form-col .form-row .form-block .form-input_align {
+            text-align: center; }
+          /* line 49, section-form/form.scss */
           .form-col .form-row .form-block .form-input:focus {
             border-color: #DEE2BD;
             border-radius: 0.2777777778rem;
             outline: none; }
-          /* line 37, section-form/form.scss */
+          /* line 55, section-form/form.scss */
           .form-col .form-row .form-block .form-input_texterea {
             height: 10.1111111111rem;
             resize: none; }
-    /* line 45, section-form/form.scss */
-    .form-col .form-controls {
+            @media screen and (max-width: 768px) {
+              /* line 55, section-form/form.scss */
+              .form-col .form-row .form-block .form-input_texterea {
+                height: 130%; } }
+          @media screen and (max-width: 768px) {
+            /* line 39, section-form/form.scss */
+            .form-col .form-row .form-block .form-input {
+              padding: 0.2777777778rem 0.2777777778rem; } }
+    @media screen and (max-width: 768px) {
+      /* line 71, section-form/form.scss */
+      .form-col .form-controls {
+        margin-top: 3.6111111111rem; } }
+    /* line 77, section-form/form.scss */
+    .form-col .form-controls .form-control {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 0.5555555556rem; }
-      /* line 50, section-form/form.scss */
-      .form-col .form-controls_checkbox {
+      /* line 82, section-form/form.scss */
+      .form-col .form-controls .form-control_checkbox {
         margin-bottom: 1.8888888889rem; }
-      /* line 54, section-form/form.scss */
-      .form-col .form-controls:last-child {
+      /* line 86, section-form/form.scss */
+      .form-col .form-controls .form-control:last-child {
         margin-right: 0; }
-      /* line 58, section-form/form.scss */
-      .form-col .form-controls .radio {
+      /* line 90, section-form/form.scss */
+      .form-col .form-controls .form-control .radio {
         display: flex;
         cursor: pointer;
         user-select: none;
         margin-right: 0.5555555556rem; }
-        /* line 64, section-form/form.scss */
-        .form-col .form-controls .radio-elem {
+        /* line 96, section-form/form.scss */
+        .form-col .form-controls .form-control .radio-elem {
           display: none; }
-          /* line 68, section-form/form.scss */
-          .form-col .form-controls .radio-elem:checked ~ .radio-visible::before {
+          /* line 100, section-form/form.scss */
+          .form-col .form-controls .form-control .radio-elem:checked ~ .radio-visible::before {
             display: block; }
-        /* line 74, section-form/form.scss */
-        .form-col .form-controls .radio .radio-visible {
+        /* line 106, section-form/form.scss */
+        .form-col .form-controls .form-control .radio .radio-visible {
           width: 1.4444444444rem;
           height: 1.4444444444rem;
           position: relative;
           border-radius: 50%;
           background: #ffff;
           margin-right: 0.5555555556rem; }
-          /* line 82, section-form/form.scss */
-          .form-col .form-controls .radio .radio-visible::before {
+          /* line 114, section-form/form.scss */
+          .form-col .form-controls .form-control .radio .radio-visible::before {
             content: "";
             width: 0.7777777778rem;
             height: 0.7777777778rem;
@@ -620,41 +803,46 @@ p {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); }
-        /* line 97, section-form/form.scss */
-        .form-col .form-controls .radio-checkbox .radio-visible {
+        /* line 129, section-form/form.scss */
+        .form-col .form-controls .form-control .radio-checkbox .radio-visible {
           border-radius: 0; }
-          /* line 100, section-form/form.scss */
-          .form-col .form-controls .radio-checkbox .radio-visible::before {
+          /* line 132, section-form/form.scss */
+          .form-col .form-controls .form-control .radio-checkbox .radio-visible::before {
             background: url(../img/section-form/checkmark.png) center center no-repeat; }
+    @media screen and (max-width: 768px) {
+      /* line 140, section-form/form.scss */
+      .form-col .form-controls .form-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
 
 /* line 1, section-map/section-map.scss */
 .section-map {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh; }
+  justify-content: center; }
 
 /* line 1, section-map/map.scss */
 .map {
-  width: 100%;
-  height: 95%; }
+  background-color: #fff;
+  height: 100vh; }
 
 /* line 1, section-map/footer.scss */
-.footer-container_content {
+.footer-content {
   display: flex;
   justify-content: space-between;
-  margin-left: 4.4444444444rem;
-  margin-bottom: 0.4444444444rem; }
-  /* line 7, section-map/footer.scss */
-  .footer-container_content .footer-contacts {
+  background-color: #fff; }
+  /* line 6, section-map/footer.scss */
+  .footer-content .footer-contacts {
+    margin-left: 4.4444444444rem;
     display: flex;
     flex-direction: column; }
     /* line 11, section-map/footer.scss */
-    .footer-container_content .footer-contacts .footer-contacts_address {
+    .footer-content .footer-contacts .footer-contacts_address {
       font-size: 1.1666666667rem;
       font-style: normal; }
     /* line 16, section-map/footer.scss */
-    .footer-container_content .footer-contacts .footer-phone {
+    .footer-content .footer-contacts .footer-phone {
       display: flex; }
 
 /* line 22, section-map/footer.scss */

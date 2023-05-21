@@ -13,6 +13,11 @@
 <body>
   <div class="wrapper">
     <div class="page">
+      <!-- <a href="#" class="logo-page_link">
+        <svg viewBox="0 0 53 38" class="logo-page_icon">
+          <use xlink:href="./svg/sprite-page.svg#logo-page"></use>
+        </svg>
+      </a> -->
       <section class="section-hero hero-pattern">
         <div class="container container-hero">
           <header class="header">
@@ -71,6 +76,11 @@
               <address class="header-contacts">
                 <a href="tel:38007003030" class="header-phone">3 800 700 30 30</a>
               </address>
+            </div>
+            <div class="burger-span" id="toggle">
+              <span class="burger-span_item burger-span_top"></span>
+              <span class="burger-span_item burger-span_middle"></span>
+              <span class="burger-span_item burger-span_bottom"></span>
             </div>
           </header>
           <div class="title-col">
@@ -296,22 +306,22 @@
                   <input type="text" name="street" class="form-input">
                 </label>
               </div>
-              <div class="form-row">
+              <div class="form-row form-row_center">
                 <label class="form-block">
                   <div class="form-title">Будинок</div>
-                  <input type="text" name="home" class="form-input form-input_aling">
+                  <input type="text" name="home" class="form-input form-input_align">
                 </label>
                 <label class="form-block">
                   <div class="form-title">Корпус</div>
-                  <input type="text" name="frame" class="form-input form-input_aling">
+                  <input type="text" name="frame" class="form-input form-input_align">
                 </label>
                 <label class="form-block">
                   <div class="form-title">Квартира</div>
-                  <input type="text" name="apartment" class="form-input form-input_aling">
+                  <input type="text" name="apartment" class="form-input form-input_align">
                 </label>
                 <label class="form-block">
                   <div class="form_title">Поверх</div>
-                  <input type="text" name="floor" class="form-input form-input_aling">
+                  <input type="text" name="floor" class="form-input form-input_align">
                 </label>
               </div>
             </div>
@@ -323,39 +333,42 @@
                 </label>
               </div>
               <div class="form-controls">
-                <label class="radio">
-                  <input type="radio" name="option" class="radio-elem">
-                  <div class="radio-visible"></div>
-                  <div class="radio-title">Знадобиться решта</div>
-                </label>
-                <label class="radio">
-                  <input type="radio" name="option" class="radio-elem">
-                  <div class="radio-visible"></div>
-                  <div class="radio-title">Оплата по карті</div>
-                </label>
-              </div>
-              <div class="form-controls form-controls_checkbox">
-                <label class="radio radio-checkbox">
-                  <input type="checkbox" class="radio-elem">
-                  <div class="radio-visible"></div>
-                  <div class="radio-title">не потрібен зворотній зв'язок</div>
-                </label>
-              </div>
-              <div class="form-btns">
-                <input type="submit" value="замовити" class="btn btn-form">
-                <input type="reset" value="Видалити" class="btn btn-form_transparent">
+                <div class="form-control">
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio-elem">
+                    <div class="radio-visible"></div>
+                    <div class="radio-title">Знадобиться решта</div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio-elem">
+                    <div class="radio-visible"></div>
+                    <div class="radio-title">Оплата по карті</div>
+                  </label>
+                </div>
+
+                <div class="form-control form-control_checkbox">
+                  <label class="radio radio-checkbox">
+                    <input type="checkbox" class="radio-elem">
+                    <div class="radio-visible"></div>
+                    <div class="radio-title">не потрібен зворотній зв'язок</div>
+                  </label>
+                </div>
+                <div class="form-btns">
+                  <input type="submit" value="замовити" class="btn btn-form">
+                  <input type="reset" value="Видалити" class="btn btn-form_transparent">
+                </div>
               </div>
             </div>
           </form>
         </div>
       </section>
       <section class="section-map">
-        <div id="map" class="map">
+        <div class="container">
+          <div id="map" class="map">
 
-        </div>
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-container_content">
+          </div>
+          <footer class="footer">
+            <div class="footer-content">
               <address class="footer-contacts">
                 <div class="footer-contacts_address">Київ, вул.Хрещатик 38</div>
                 <div class="footer-phone">
@@ -391,8 +404,8 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </section>
     </div>
   </div>
