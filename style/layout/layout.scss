@@ -76,6 +76,10 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+
+  @include phones {
+    justify-content: space-evenly;
+  }
 }
 
 .container-reviews {

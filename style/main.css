@@ -66,15 +66,19 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
+  @media screen and (max-width: 480px) {
+    /* line 74, layout/layout.scss */
+    .container-benefits {
+      justify-content: space-evenly; } }
 
-/* line 81, layout/layout.scss */
+/* line 85, layout/layout.scss */
 .container-reviews {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
 
-/* line 88, layout/layout.scss */
+/* line 92, layout/layout.scss */
 .container-form {
   display: flex;
   flex-direction: column;
@@ -88,14 +92,19 @@ p {
   height: 100vh;
   color: #fff; }
 
-/* line 15, section-hero/section-hero.scss */
+/* line 7, section-hero/section-hero.scss */
 .hero-pattern {
   background: url(../img/section-hero/leaves1.png) right 6% bottom 25%/10% no-repeat, url(../img/section-hero/bars.png) right 8% bottom 30%/30% no-repeat, url(../img/section-hero/pattern.png) right bottom/40% no-repeat;
   background-color: #61C4D9; }
   @media screen and (max-width: 768px) {
-    /* line 15, section-hero/section-hero.scss */
+    /* line 7, section-hero/section-hero.scss */
     .hero-pattern {
       background: url(../img/section-hero/leaves1.png) right 20% bottom 60%/30% no-repeat, url(../img/section-hero/bars.png) center bottom 70%/60% no-repeat, url(../img/section-hero/pattern.png) right bottom 85%/100% no-repeat;
+      background-color: #61C4D9; } }
+  @media screen and (max-width: 480px) {
+    /* line 7, section-hero/section-hero.scss */
+    .hero-pattern {
+      background: url(../img/section-hero/leaves1.png) right 18% bottom 66%/31% no-repeat, url(../img/section-hero/bars.png) center bottom 81%/67% no-repeat, url(../img/section-hero/pattern.png) right bottom 80%/63% no-repeat;
       background-color: #61C4D9; } }
   /* line 30, section-hero/section-hero.scss */
   .hero-pattern::after {
@@ -110,12 +119,21 @@ p {
       /* line 30, section-hero/section-hero.scss */
       .hero-pattern::after {
         background: url(../img/section-hero/leaves2.png) center bottom/30% no-repeat, url(../img/section-hero/berries1.png) left center/61% no-repeat, url(../img/section-hero/berries2.png) right bottom/24% no-repeat;
-        width: 43%;
+        width: 41%;
         height: 20%;
-        left: 13.6111111111rem;
+        left: 33%;
         position: absolute;
-        bottom: 29.4444444444rem; } }
-  /* line 55, section-hero/section-hero.scss */
+        bottom: 36%; } }
+    @media screen and (max-width: 480px) {
+      /* line 30, section-hero/section-hero.scss */
+      .hero-pattern::after {
+        background: url(../img/section-hero/leaves2.png) center bottom/31% no-repeat, url(../img/section-hero/berries1.png) left top 182%/55% no-repeat, url(../img/section-hero/berries2.png) right bottom/22% no-repeat;
+        width: 69%;
+        height: 15%;
+        left: 17%;
+        position: absolute;
+        bottom: 50%; } }
+  /* line 67, section-hero/section-hero.scss */
   .hero-pattern::before {
     content: "";
     background: url(../img/section-hero/leaves3.png) center center/60% no-repeat;
@@ -125,9 +143,19 @@ p {
     left: 10%;
     bottom: -4.1111111111rem; }
     @media screen and (max-width: 768px) {
-      /* line 55, section-hero/section-hero.scss */
+      /* line 67, section-hero/section-hero.scss */
       .hero-pattern::before {
         display: none; } }
+    @media screen and (max-width: 480px) {
+      /* line 67, section-hero/section-hero.scss */
+      .hero-pattern::before {
+        display: flex;
+        background: url(../img/section-hero/leaves3.png) center center/70% no-repeat;
+        width: 2.7777777778rem;
+        height: 5.5555555556rem;
+        position: absolute;
+        left: 14%;
+        bottom: 21.9444444444rem; } }
 
 /* line 1, section-hero/header.scss */
 .header {
@@ -141,78 +169,82 @@ p {
     /* line 1, section-hero/header.scss */
     .header {
       margin-left: 0.2222222222rem; } }
-  /* line 13, section-hero/header.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-hero/header.scss */
+    .header {
+      margin: 0; } }
+  /* line 17, section-hero/header.scss */
   .header .header-col_left {
     display: flex;
     width: 78%; }
-    /* line 17, section-hero/header.scss */
+    /* line 21, section-hero/header.scss */
     .header .header-col_left .logo-link {
       display: flex; }
-      /* line 20, section-hero/header.scss */
+      /* line 24, section-hero/header.scss */
       .header .header-col_left .logo-link .logo-icon {
         fill: #fff; }
-    /* line 25, section-hero/header.scss */
+    /* line 29, section-hero/header.scss */
     .header .header-col_left .header-menu {
       width: 100%;
       font-size: 1rem;
       margin-top: 0.4444444444rem;
       margin-left: 2.3888888889rem; }
-      /* line 31, section-hero/header.scss */
+      /* line 35, section-hero/header.scss */
       .header .header-col_left .header-menu .menu-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; }
-        /* line 36, section-hero/header.scss */
+        /* line 40, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-benefits:hover {
           color: #365A49; }
-        /* line 40, section-hero/header.scss */
+        /* line 44, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-slider:hover {
           color: #365A49; }
-        /* line 44, section-hero/header.scss */
+        /* line 48, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-team:hover {
           color: #365A49; }
-        /* line 48, section-hero/header.scss */
+        /* line 52, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-products:hover {
           color: #365A49; }
-        /* line 52, section-hero/header.scss */
+        /* line 56, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-reviews:hover {
           color: #365A49; }
-        /* line 56, section-hero/header.scss */
+        /* line 60, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-player:hover {
           color: #365A49; }
-        /* line 60, section-hero/header.scss */
+        /* line 64, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-map:hover {
           color: #365A49; }
-        /* line 64, section-hero/header.scss */
+        /* line 68, section-hero/header.scss */
         .header .header-col_left .header-menu .menu-list .menu-link {
           text-decoration: none; }
       @media screen and (max-width: 768px) {
-        /* line 25, section-hero/header.scss */
+        /* line 29, section-hero/header.scss */
         .header .header-col_left .header-menu {
           display: none; } }
-  /* line 75, section-hero/header.scss */
+  /* line 79, section-hero/header.scss */
   .header .header-col_right {
     display: flex;
     width: 9.4444444444rem; }
-    /* line 79, section-hero/header.scss */
+    /* line 83, section-hero/header.scss */
     .header .header-col_right .phone-link {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-right: 0.2777777778rem; }
-      /* line 85, section-hero/header.scss */
+      /* line 89, section-hero/header.scss */
       .header .header-col_right .phone-link .phone-icon {
         fill: #fff; }
-    /* line 90, section-hero/header.scss */
+    /* line 94, section-hero/header.scss */
     .header .header-col_right .header-contacts {
       width: 7.9444444444rem; }
-      /* line 93, section-hero/header.scss */
+      /* line 97, section-hero/header.scss */
       .header .header-col_right .header-contacts .header-phone {
         font-size: 1.3333333333rem;
         text-decoration: none;
         font-style: normal; }
     @media screen and (max-width: 768px) {
-      /* line 75, section-hero/header.scss */
+      /* line 79, section-hero/header.scss */
       .header .header-col_right {
         display: none; } }
 
@@ -232,26 +264,27 @@ p {
   @media screen and (max-width: 768px) {
     /* line 1, section-hero/burger.scss */
     .burger-span {
-      display: flex; } }
-  /* line 18, section-hero/burger.scss */
+      display: flex;
+      margin-right: 0.5555555556rem; } }
+  /* line 19, section-hero/burger.scss */
   .burger-span.burger-span--active {
     opacity: 0.7; }
-    /* line 21, section-hero/burger.scss */
+    /* line 22, section-hero/burger.scss */
     .burger-span.burger-span--active .burger-span_top {
       -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
       -ms-transform: translateY(11px) translateX(0) rotate(45deg);
       transform: translateY(11px) translateX(0) rotate(405deg);
       border-radius: 0.2777777778rem; }
-    /* line 28, section-hero/burger.scss */
+    /* line 29, section-hero/burger.scss */
     .burger-span.burger-span--active .burger-span_middle {
       opacity: 0; }
-    /* line 32, section-hero/burger.scss */
+    /* line 33, section-hero/burger.scss */
     .burger-span.burger-span--active .burger-span_bottom {
       -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
       -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
       transform: translateY(-11px) translateX(0) rotate(-405deg);
       border-radius: 5px; }
-  /* line 40, section-hero/burger.scss */
+  /* line 41, section-hero/burger.scss */
   .burger-span_item {
     background: #fff;
     border: none;
@@ -264,10 +297,10 @@ p {
     -o-transition: all .65s ease;
     transition: all .65s ease;
     cursor: pointer; }
-    /* line 54, section-hero/burger.scss */
+    /* line 55, section-hero/burger.scss */
     .burger-span_item:nth-of-type(2) {
       top: 0.5rem; }
-    /* line 58, section-hero/burger.scss */
+    /* line 59, section-hero/burger.scss */
     .burger-span_item:nth-of-type(3) {
       top: 1rem; }
 
@@ -278,29 +311,45 @@ p {
   width: 37%;
   min-height: 16.6666666667rem;
   flex-direction: column;
-  text-align: center;
   margin-left: 4.4444444444rem;
   z-index: 10; }
-  /* line 11, section-hero/title.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, section-hero/title.scss */
+    .title-col {
+      align-items: center;
+      text-align: center;
+      min-width: 100%;
+      min-height: 20.1111111111rem;
+      margin-left: 0;
+      margin-bottom: 14%; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, section-hero/title.scss */
+    .title-col {
+      text-align: center;
+      margin-bottom: -9%; } }
+  /* line 25, section-hero/title.scss */
   .title-col .title {
     font-size: 2.6666666667rem;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 1.1111111111rem; }
-  /* line 19, section-hero/title.scss */
+    @media screen and (max-width: 480px) {
+      /* line 25, section-hero/title.scss */
+      .title-col .title {
+        font-size: 2.2777777778rem;
+        line-height: 0.9;
+        padding: 0 3.0555555556rem 0 3.0555555556rem;
+        margin-bottom: 0.2777777778rem; } }
+  /* line 40, section-hero/title.scss */
   .title-col .subtitle {
     font-size: 1.1666666667rem;
     line-height: 1.3;
     margin-bottom: 1.3888888889rem; }
-  @media screen and (max-width: 768px) {
-    /* line 1, section-hero/title.scss */
-    .title-col {
-      align-items: center;
-      min-width: 100%;
-      min-height: 20.1111111111rem;
-      margin-left: 0;
-      margin-bottom: 14%; } }
+    @media screen and (max-width: 480px) {
+      /* line 40, section-hero/title.scss */
+      .title-col .subtitle {
+        line-height: 1; } }
 
 /* line 1, button/button.scss */
 .btn {
@@ -412,26 +461,44 @@ p {
         height: 13.8888888889rem;
         position: absolute;
         bottom: -3.3333333333rem; } }
+    @media screen and (max-width: 480px) {
+      /* line 9, section-benefits/section-benefits.scss */
+      .section-benefits::before {
+        background: none; } }
 
 /* line 1, section-benefits/benefits-headline.scss */
 .headline-cap {
   display: flex;
   flex-direction: column;
   margin-bottom: 5.2777777778rem; }
-  /* line 6, section-benefits/benefits-headline.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-benefits/benefits-headline.scss */
+    .headline-cap {
+      margin-bottom: 1.1111111111rem; } }
+  /* line 10, section-benefits/benefits-headline.scss */
   .headline-cap .headline-title {
     font-size: 2.6666666667rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1.1111111111rem; }
-  /* line 14, section-benefits/benefits-headline.scss */
+    @media screen and (max-width: 480px) {
+      /* line 10, section-benefits/benefits-headline.scss */
+      .headline-cap .headline-title {
+        font-size: 2.2777777778rem;
+        margin-bottom: 0.2222222222rem; } }
+  /* line 23, section-benefits/benefits-headline.scss */
   .headline-cap .headline-subtitle {
     padding: 0 29%; }
     @media screen and (max-width: 768px) {
-      /* line 14, section-benefits/benefits-headline.scss */
+      /* line 23, section-benefits/benefits-headline.scss */
       .headline-cap .headline-subtitle {
         padding: 0 25%; } }
+    @media screen and (max-width: 480px) {
+      /* line 23, section-benefits/benefits-headline.scss */
+      .headline-cap .headline-subtitle {
+        text-align: center;
+        padding: 0 5%; } }
 
 /* line 1, section-benefits/benefits.scss */
 .benefits-list {
@@ -439,49 +506,74 @@ p {
   flex-wrap: wrap;
   margin-left: 3.8333333333rem;
   margin-right: 3.8333333333rem; }
-  /* line 7, section-benefits/benefits.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-benefits/benefits.scss */
+    .benefits-list {
+      line-height: 1;
+      margin: 0 5% 0 5%; } }
+  /* line 12, section-benefits/benefits.scss */
   .benefits-list .benefits {
     text-align: center; }
-  /* line 11, section-benefits/benefits.scss */
+    @media screen and (max-width: 480px) {
+      /* line 12, section-benefits/benefits.scss */
+      .benefits-list .benefits {
+        text-align: left; } }
+  /* line 20, section-benefits/benefits.scss */
   .benefits-list .benefits-item {
     flex: 1;
     padding: 0 4%;
     position: relative; }
-    /* line 16, section-benefits/benefits.scss */
+    /* line 25, section-benefits/benefits.scss */
     .benefits-list .benefits-item:first-child {
       padding-left: 0; }
-    /* line 20, section-benefits/benefits.scss */
+    /* line 29, section-benefits/benefits.scss */
     .benefits-list .benefits-item:last-child {
       padding-right: 0; }
-    /* line 24, section-benefits/benefits.scss */
+    @media screen and (max-width: 480px) {
+      /* line 20, section-benefits/benefits.scss */
+      .benefits-list .benefits-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 34px 0; } }
+    /* line 39, section-benefits/benefits.scss */
     .benefits-list .benefits-item .benefits-image {
       margin-bottom: 3.0555555556rem; }
-      /* line 27, section-benefits/benefits.scss */
+      @media screen and (max-width: 480px) {
+        /* line 39, section-benefits/benefits.scss */
+        .benefits-list .benefits-item .benefits-image {
+          margin: 0; } }
+      /* line 46, section-benefits/benefits.scss */
       .benefits-list .benefits-item .benefits-image .benefits-wrap {
-        height: 3.8888888889rem;
+        height: 6.2222222222rem;
+        width: 6.2222222222rem;
         display: flex;
-        justify-content: center; }
-        /* line 32, section-benefits/benefits.scss */
+        justify-content: center;
+        align-items: center; }
+        /* line 53, section-benefits/benefits.scss */
         .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-happy {
           width: 3.6111111111rem;
           height: 3.8333333333rem;
           fill: #292929; }
-        /* line 38, section-benefits/benefits.scss */
+        /* line 60, section-benefits/benefits.scss */
         .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-smile {
           width: 3.7777777778rem;
           height: 3.7777777778rem;
           fill: #292929; }
-        /* line 44, section-benefits/benefits.scss */
+        /* line 66, section-benefits/benefits.scss */
         .benefits-list .benefits-item .benefits-image .benefits-wrap .icon-hand {
           width: 4.3888888889rem;
           height: 3.5rem;
           fill: #292929; }
-    /* line 54, section-benefits/benefits.scss */
+    /* line 76, section-benefits/benefits.scss */
     .benefits-list .benefits-item .benefits-text .benefits-title {
       font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 0.8888888889rem; }
-    /* line 60, section-benefits/benefits.scss */
+      @media screen and (max-width: 480px) {
+        /* line 76, section-benefits/benefits.scss */
+        .benefits-list .benefits-item .benefits-text .benefits-title {
+          margin-left: 18px; } }
+    /* line 86, section-benefits/benefits.scss */
     .benefits-list .benefits-item .benefits-text .benefits-desc {
       line-height: 1.2; }
 
@@ -520,6 +612,13 @@ p {
         height: 10.5555555556rem;
         top: 1.1111111111rem;
         right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 21, section-reviews/section-reviews.scss */
+      .section-reviews::after {
+        width: 9.7222222222rem;
+        height: 7.4444444444rem;
+        top: -2%;
+        right: -9%; } }
 
 /* line 1, section-reviews/reviews-headline.scss */
 .reviews-cap {
@@ -564,68 +663,80 @@ p {
         .reviews .reviews-main::after {
           right: 0;
           top: 22.2222222222rem; } }
-    /* line 43, section-reviews/reviews.scss */
+      @media screen and (max-width: 480px) {
+        /* line 17, section-reviews/reviews.scss */
+        .reviews .reviews-main::after {
+          top: 27%;
+          right: -8%; } }
+    /* line 48, section-reviews/reviews.scss */
     .reviews .reviews-main .reviews-main_list {
       position: relative;
       z-index: 40; }
-      /* line 47, section-reviews/reviews.scss */
+      /* line 52, section-reviews/reviews.scss */
       .reviews .reviews-main .reviews-main_list .reviews-main_item {
         position: static;
         opacity: 1;
         pointer-events: unset; }
-        /* line 52, section-reviews/reviews.scss */
+        /* line 57, section-reviews/reviews.scss */
         .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
           flex-wrap: wrap;
           display: flex; }
           @media screen and (max-width: 768px) {
-            /* line 52, section-reviews/reviews.scss */
+            /* line 57, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
               flex-direction: column;
               align-items: center;
               text-align: center; } }
-          /* line 62, section-reviews/reviews.scss */
+          /* line 67, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
             width: 14.1111111111rem;
             height: 14.4444444444rem;
             margin-right: 1.1111111111rem; }
             @media screen and (max-width: 768px) {
-              /* line 62, section-reviews/reviews.scss */
+              /* line 67, section-reviews/reviews.scss */
               .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
                 width: 20%;
-                height: 20%; } }
-            /* line 72, section-reviews/reviews.scss */
+                height: 20%;
+                margin-right: 0; } }
+            @media screen and (max-width: 480px) {
+              /* line 67, section-reviews/reviews.scss */
+              .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
+                width: 27%;
+                height: 20%;
+                margin-right: 0; } }
+            /* line 84, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar_img {
               display: flex;
               object-fit: cover;
               width: 100%;
               height: 100%; }
-          /* line 80, section-reviews/reviews.scss */
+          /* line 92, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content {
             flex: 1; }
-            /* line 83, section-reviews/reviews.scss */
+            /* line 95, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_title {
               padding-top: 0.5555555556rem;
               font-size: 1.6111111111rem;
               font-weight: bold;
               padding-bottom: 1.0555555556rem; }
-            /* line 90, section-reviews/reviews.scss */
+            /* line 102, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
               line-height: 1.2;
               padding: 0 8.3333333333rem 0.3888888889rem 0; }
               @media screen and (max-width: 768px) {
-                /* line 90, section-reviews/reviews.scss */
+                /* line 102, section-reviews/reviews.scss */
                 .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
                   padding: 0; } }
-            /* line 99, section-reviews/reviews.scss */
+            /* line 111, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_author {
               font-size: 1rem;
               font-weight: bold; }
-  /* line 110, section-reviews/reviews.scss */
+  /* line 122, section-reviews/reviews.scss */
   .reviews .reviews-footer_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    /* line 115, section-reviews/reviews.scss */
+    /* line 127, section-reviews/reviews.scss */
     .reviews .reviews-footer_list .reviews-footer_item {
       position: relative;
       width: 4.5555555556rem;
@@ -634,16 +745,25 @@ p {
       border-radius: 50%;
       overflow: hidden;
       cursor: pointer; }
-      /* line 124, section-reviews/reviews.scss */
+      @media screen and (max-width: 480px) {
+        /* line 127, section-reviews/reviews.scss */
+        .reviews .reviews-footer_list .reviews-footer_item {
+          width: 3.3888888889rem;
+          height: 3.3888888889rem;
+          margin-right: 0.6666666667rem; }
+          /* line 141, section-reviews/reviews.scss */
+          .reviews .reviews-footer_list .reviews-footer_item:last-child {
+            margin-right: 0; } }
+      /* line 146, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item.active {
         border-color: #365A49; }
-      /* line 128, section-reviews/reviews.scss */
+      /* line 150, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link {
         display: flex;
         position: absolute;
         width: 100%;
         height: 100%; }
-        /* line 134, section-reviews/reviews.scss */
+        /* line 156, section-reviews/reviews.scss */
         .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link .interactive-avatar_img {
           width: 100%;
           height: 100%;
@@ -692,6 +812,11 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 2.1666666667rem; }
+  @media screen and (max-width: 480px) {
+    /* line 1, section-form/form-cap.scss */
+    .form-cap {
+      text-align: center;
+      font-size: 2.2777777778rem; } }
 
 /* line 1, section-form/form.scss */
 .form {
@@ -706,84 +831,88 @@ p {
       justify-content: center;
       width: 26.3333333333rem;
       margin: 0; } }
-  /* line 14, section-form/form.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-form/form.scss */
+    .form {
+      width: 100%; } }
+  /* line 19, section-form/form.scss */
   .form-col {
     flex: 1;
     margin-right: 0.9444444444rem; }
     @media screen and (max-width: 768px) {
-      /* line 14, section-form/form.scss */
+      /* line 19, section-form/form.scss */
       .form-col {
         margin-right: 0; } }
-    /* line 22, section-form/form.scss */
+    /* line 27, section-form/form.scss */
     .form-col .form-row {
       display: flex;
       margin-bottom: 0.8333333333rem; }
       @media screen and (max-width: 768px) {
-        /* line 22, section-form/form.scss */
+        /* line 27, section-form/form.scss */
         .form-col .form-row {
           height: 3.4444444444rem;
-          margin-bottom: 12px; } }
-      /* line 31, section-form/form.scss */
+          margin-bottom: 0.6666666667rem; } }
+      /* line 36, section-form/form.scss */
       .form-col .form-row .form-block {
         flex: 1;
         margin-right: 1rem; }
-        /* line 35, section-form/form.scss */
+        /* line 40, section-form/form.scss */
         .form-col .form-row .form-block:last-child {
           margin-right: 0; }
-        /* line 39, section-form/form.scss */
+        /* line 44, section-form/form.scss */
         .form-col .form-row .form-block .form-input {
           width: 100%;
           padding: 1rem 0.5555555556rem;
           border: 0.1666666667rem solid transparent;
           border-radius: 0.2222222222rem; }
-          /* line 45, section-form/form.scss */
+          /* line 50, section-form/form.scss */
           .form-col .form-row .form-block .form-input_align {
             text-align: center; }
-          /* line 49, section-form/form.scss */
+          /* line 54, section-form/form.scss */
           .form-col .form-row .form-block .form-input:focus {
             border-color: #DEE2BD;
             border-radius: 0.2777777778rem;
             outline: none; }
-          /* line 55, section-form/form.scss */
+          /* line 60, section-form/form.scss */
           .form-col .form-row .form-block .form-input_texterea {
             height: 10.1111111111rem;
             resize: none; }
             @media screen and (max-width: 768px) {
-              /* line 55, section-form/form.scss */
+              /* line 60, section-form/form.scss */
               .form-col .form-row .form-block .form-input_texterea {
                 height: 130%; } }
           @media screen and (max-width: 768px) {
-            /* line 39, section-form/form.scss */
+            /* line 44, section-form/form.scss */
             .form-col .form-row .form-block .form-input {
               padding: 0.2777777778rem 0.2777777778rem; } }
     @media screen and (max-width: 768px) {
-      /* line 71, section-form/form.scss */
+      /* line 76, section-form/form.scss */
       .form-col .form-controls {
         margin-top: 3.6111111111rem; } }
-    /* line 77, section-form/form.scss */
+    /* line 82, section-form/form.scss */
     .form-col .form-controls .form-control {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 0.5555555556rem; }
-      /* line 82, section-form/form.scss */
+      /* line 87, section-form/form.scss */
       .form-col .form-controls .form-control_checkbox {
         margin-bottom: 1.8888888889rem; }
-      /* line 86, section-form/form.scss */
+      /* line 91, section-form/form.scss */
       .form-col .form-controls .form-control:last-child {
         margin-right: 0; }
-      /* line 90, section-form/form.scss */
+      /* line 95, section-form/form.scss */
       .form-col .form-controls .form-control .radio {
         display: flex;
         cursor: pointer;
         user-select: none;
         margin-right: 0.5555555556rem; }
-        /* line 96, section-form/form.scss */
+        /* line 101, section-form/form.scss */
         .form-col .form-controls .form-control .radio-elem {
           display: none; }
-          /* line 100, section-form/form.scss */
+          /* line 105, section-form/form.scss */
           .form-col .form-controls .form-control .radio-elem:checked ~ .radio-visible::before {
             display: block; }
-        /* line 106, section-form/form.scss */
+        /* line 111, section-form/form.scss */
         .form-col .form-controls .form-control .radio .radio-visible {
           width: 1.4444444444rem;
           height: 1.4444444444rem;
@@ -791,7 +920,7 @@ p {
           border-radius: 50%;
           background: #ffff;
           margin-right: 0.5555555556rem; }
-          /* line 114, section-form/form.scss */
+          /* line 119, section-form/form.scss */
           .form-col .form-controls .form-control .radio .radio-visible::before {
             content: "";
             width: 0.7777777778rem;
@@ -803,14 +932,14 @@ p {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); }
-        /* line 129, section-form/form.scss */
+        /* line 134, section-form/form.scss */
         .form-col .form-controls .form-control .radio-checkbox .radio-visible {
           border-radius: 0; }
-          /* line 132, section-form/form.scss */
+          /* line 137, section-form/form.scss */
           .form-col .form-controls .form-control .radio-checkbox .radio-visible::before {
             background: url(../img/section-form/checkmark.png) center center no-repeat; }
     @media screen and (max-width: 768px) {
-      /* line 140, section-form/form.scss */
+      /* line 145, section-form/form.scss */
       .form-col .form-controls .form-btns {
         display: flex;
         justify-content: center;
@@ -837,25 +966,29 @@ p {
     margin-left: 4.4444444444rem;
     display: flex;
     flex-direction: column; }
-    /* line 11, section-map/footer.scss */
+    @media screen and (max-width: 480px) {
+      /* line 6, section-map/footer.scss */
+      .footer-content .footer-contacts {
+        margin-left: 0; } }
+    /* line 15, section-map/footer.scss */
     .footer-content .footer-contacts .footer-contacts_address {
       font-size: 1.1666666667rem;
       font-style: normal; }
-    /* line 16, section-map/footer.scss */
+    /* line 20, section-map/footer.scss */
     .footer-content .footer-contacts .footer-phone {
       display: flex; }
 
-/* line 22, section-map/footer.scss */
+/* line 26, section-map/footer.scss */
 .phone-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 0.2777777778rem; }
-  /* line 28, section-map/footer.scss */
+  /* line 32, section-map/footer.scss */
   .phone-icon .phone-svg {
     fill: #497870; }
 
-/* line 33, section-map/footer.scss */
+/* line 37, section-map/footer.scss */
 .footer-link {
   font-size: 1.1666666667rem;
   text-decoration: none;
@@ -867,26 +1000,30 @@ p {
   display: flex;
   align-items: center;
   margin-right: 4.3333333333rem; }
-  /* line 6, section-map/socials.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-map/socials.scss */
+    .socials-list {
+      margin-right: 0; } }
+  /* line 10, section-map/socials.scss */
   .socials-list .socials-item {
     margin-right: 1.1111111111rem; }
-    /* line 9, section-map/socials.scss */
+    /* line 13, section-map/socials.scss */
     .socials-list .socials-item:last-child {
       margin-right: 0; }
-    /* line 13, section-map/socials.scss */
+    /* line 17, section-map/socials.scss */
     .socials-list .socials-item .social-link {
       display: flex; }
-      /* line 16, section-map/socials.scss */
+      /* line 20, section-map/socials.scss */
       .socials-list .socials-item .social-link .social-fb {
         width: 1.1111111111rem;
         height: 1.1111111111rem;
         fill: #292929; }
-      /* line 22, section-map/socials.scss */
+      /* line 26, section-map/socials.scss */
       .socials-list .socials-item .social-link .social-in {
         width: 1.1111111111rem;
         height: 1.1111111111rem;
         fill: #B3B3B3; }
-      /* line 28, section-map/socials.scss */
+      /* line 32, section-map/socials.scss */
       .socials-list .socials-item .social-link .social-tv {
         width: 1.1111111111rem;
         height: 1.1111111111rem;

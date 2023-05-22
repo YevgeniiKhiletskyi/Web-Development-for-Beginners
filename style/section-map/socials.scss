@@ -3,6 +3,10 @@
   align-items: center;
   margin-right: rem(78px);
 
+  @include phones {
+    margin-right: 0;
+  }
+
   .socials-item {
     margin-right: rem(20px);
 

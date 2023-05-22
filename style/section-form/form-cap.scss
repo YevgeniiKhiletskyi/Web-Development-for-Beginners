@@ -6,4 +6,9 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: rem(39px);
+
+  @include phones {
+    text-align: center;
+    font-size: rem(41px);
+  }
 }

@@ -28,6 +28,11 @@
         right: 0;
         top: rem(400px);
       }
+
+      @include phones {
+        top: 27%;
+        right: -8%;
+      }
     }
 
 
@@ -67,6 +72,13 @@
             @include tablets {
               width: 20%;
               height: 20%;
+              margin-right: 0;
+            }
+
+            @include phones {
+              width: 27%;
+              height: 20%;
+              margin-right: 0;
             }
               
             &_img {
@@ -120,6 +132,16 @@
       border-radius: 50%;
       overflow: hidden;
       cursor: pointer;
+
+      @include phones {
+        width: rem(61px);
+        height: rem(61px);
+        margin-right: rem(12px);
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
 
       &.active {
         border-color: #365A49;

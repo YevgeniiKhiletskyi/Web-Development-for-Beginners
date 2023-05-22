@@ -11,6 +11,11 @@
     margin: 0;
   }
 
+  @include phones{
+    width: 100%;
+  }
+
+
   &-col {
     flex: 1;
     margin-right: rem(17px);
@@ -25,7 +30,7 @@
 
       @include tablets {
         height: rem(62px);
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
       }
  
       .form-block {

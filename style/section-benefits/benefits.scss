@@ -3,9 +3,18 @@
   flex-wrap: wrap;
   margin-left: rem(69px);
   margin-right: rem(69px);
+
+  @include phones {
+    line-height: 1;
+    margin: 0 5% 0 5%;
+   }
   
   .benefits {
     text-align: center;
+
+    @include phones {
+      text-align: left;
+    }
   }
 
   .benefits-item {
@@ -21,17 +30,30 @@
       padding-right: 0;
     }
 
+    @include phones {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 34px 0;
+    }
+
     .benefits-image {
       margin-bottom: rem(55px);
 
+      @include phones {
+        margin: 0;
+      }
+
       .benefits-wrap {
-        height: rem(70px);
+        height: rem(112px);
+        width: rem(112px);
         display: flex;
         justify-content: center;
+        align-items: center;
 
         .icon-happy {
           width: rem(65px);
           height: rem(69px);
+          
           fill:#292929;
         }
 
@@ -55,6 +77,10 @@
         font-size: rem(27px);
         font-weight: bold;
         margin-bottom: rem(16px);
+
+        @include phones {
+          margin-left: 18px;
+        }
       }
   
       .benefits-desc {

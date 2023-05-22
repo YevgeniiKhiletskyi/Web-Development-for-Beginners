@@ -3,12 +3,21 @@
   flex-direction: column;
   margin-bottom: rem(95px);
 
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+
   .headline-title {
     font-size: rem(48px);
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: rem(20px);
+
+    @include phones {
+      font-size: rem(41px);
+      margin-bottom: rem(4px);
+    }
   }
 
   .headline-subtitle {
@@ -16,6 +25,11 @@
 
     @include tablets {
       padding: 0 25%;
+    }
+
+    @include phones {
+      text-align: center;
+      padding: 0 5%;
     }
   }
 }

@@ -33,5 +33,12 @@
       top: rem(20px);
       right: 0;
     }
+
+    @include phones {
+      width: rem(175px);
+      height: rem(134px);
+      top: -2%;
+      right: -9%;
+    }
   }
 }

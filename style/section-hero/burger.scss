@@ -13,6 +13,7 @@
 
   @include tablets {
     display: flex;
+    margin-right: rem(10px);
   } 
   
   &.burger-span--active {
