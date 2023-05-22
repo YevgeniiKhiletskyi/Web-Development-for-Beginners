@@ -16,6 +16,13 @@
       width: rem(200px);
       height: rem(400px);
     }
+
+    @include phones {
+      width: 105px;
+      height: 200px;
+      left: -19px;
+      bottom: -93px;
+    }
   }
 
   &::after {

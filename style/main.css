@@ -596,7 +596,14 @@ p {
       .section-reviews::before {
         width: 11.1111111111rem;
         height: 22.2222222222rem; } }
-  /* line 21, section-reviews/section-reviews.scss */
+    @media screen and (max-width: 480px) {
+      /* line 7, section-reviews/section-reviews.scss */
+      .section-reviews::before {
+        width: 105px;
+        height: 200px;
+        left: -19px;
+        bottom: -93px; } }
+  /* line 28, section-reviews/section-reviews.scss */
   .section-reviews::after {
     content: "";
     background: url(../img/section-reviews/reviews-background/berries2.png) center center/75% no-repeat;
@@ -606,19 +613,19 @@ p {
     right: 2.2222222222rem;
     top: 2.2222222222rem; }
     @media screen and (max-width: 768px) {
-      /* line 21, section-reviews/section-reviews.scss */
+      /* line 28, section-reviews/section-reviews.scss */
       .section-reviews::after {
         width: 11.1111111111rem;
         height: 10.5555555556rem;
         top: 1.1111111111rem;
         right: 0; } }
     @media screen and (max-width: 480px) {
-      /* line 21, section-reviews/section-reviews.scss */
+      /* line 28, section-reviews/section-reviews.scss */
       .section-reviews::after {
         width: 9.7222222222rem;
         height: 7.4444444444rem;
-        top: -2%;
-        right: -9%; } }
+        top: 1%;
+        right: -11%; } }
 
 /* line 1, section-reviews/reviews-headline.scss */
 .reviews-cap {
@@ -651,7 +658,7 @@ p {
     /* line 15, section-reviews/reviews.scss */
     .reviews .reviews-main::after {
       content: "";
-      background: url(../img/section-reviews/reviews-background/pattern.svg) top/65% no-repeat;
+      background: url(../img/section-reviews/reviews-background/pattern.png) top/65% no-repeat;
       position: absolute;
       width: 11.1111111111rem;
       height: 11.1111111111rem;
@@ -667,7 +674,7 @@ p {
         /* line 15, section-reviews/reviews.scss */
         .reviews .reviews-main::after {
           top: 22%;
-          right: -8%; } }
+          right: -11%; } }
     /* line 36, section-reviews/reviews.scss */
     .reviews .reviews-main .reviews-main_list {
       position: relative;
