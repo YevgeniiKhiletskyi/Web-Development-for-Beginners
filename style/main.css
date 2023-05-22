@@ -651,7 +651,7 @@ p {
     /* line 15, section-reviews/reviews.scss */
     .reviews .reviews-main::after {
       content: "";
-      background: url(../../img/section-reviews/reviews-background/pattern.svg) top/65% no-repeat;
+      background: url(../img/section-reviews/reviews-background/pattern.svg) top/65% no-repeat;
       position: absolute;
       width: 11.1111111111rem;
       height: 11.1111111111rem;
