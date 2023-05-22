@@ -33,7 +33,7 @@
     @include phones {
       display: flex;
       justify-content: space-between;
-      padding: 0 0 34px 0;
+      padding: 0 0 rem(15px) 0;
     }
 
     .benefits-image {
@@ -79,7 +79,7 @@
         margin-bottom: rem(16px);
 
         @include phones {
-          margin-left: 18px;
+          margin-left: rem(18px);
         }
       }
   

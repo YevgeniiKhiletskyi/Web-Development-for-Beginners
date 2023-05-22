@@ -57,28 +57,28 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.5555555556rem 0.5555555556rem 0 0;
   height: 100vh; }
 
-/* line 74, layout/layout.scss */
+/* line 54, layout/layout.scss */
 .container-benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
   @media screen and (max-width: 480px) {
-    /* line 74, layout/layout.scss */
+    /* line 54, layout/layout.scss */
     .container-benefits {
       justify-content: space-evenly; } }
 
-/* line 85, layout/layout.scss */
+/* line 65, layout/layout.scss */
 .container-reviews {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
 
-/* line 92, layout/layout.scss */
+/* line 72, layout/layout.scss */
 .container-form {
   display: flex;
   flex-direction: column;
@@ -127,9 +127,9 @@ p {
     @media screen and (max-width: 480px) {
       /* line 30, section-hero/section-hero.scss */
       .hero-pattern::after {
-        background: url(../img/section-hero/leaves2.png) center bottom/31% no-repeat, url(../img/section-hero/berries1.png) left top 182%/55% no-repeat, url(../img/section-hero/berries2.png) right bottom/22% no-repeat;
-        width: 69%;
-        height: 15%;
+        background: url(../img/section-hero/leaves2.png) center bottom/31% no-repeat, url(../img/section-hero/berries1.png) left top 201%/55% no-repeat, url(../img/section-hero/berries2.png) right bottom/22% no-repeat;
+        width: 68%;
+        height: 18%;
         left: 17%;
         position: absolute;
         bottom: 50%; } }
@@ -444,7 +444,7 @@ p {
   color: #000;
   position: relative;
   z-index: 40; }
-  /* line 9, section-benefits/section-benefits.scss */
+  /* line 8, section-benefits/section-benefits.scss */
   .section-benefits::before {
     content: "";
     background: url(../img/section-benefits/raspberries.png) left center/85% no-repeat;
@@ -453,7 +453,7 @@ p {
     position: absolute;
     bottom: -9.2777777778rem; }
     @media screen and (max-width: 768px) {
-      /* line 9, section-benefits/section-benefits.scss */
+      /* line 8, section-benefits/section-benefits.scss */
       .section-benefits::before {
         content: "";
         background: url(../img/section-benefits/raspberries.png) left center/85% no-repeat;
@@ -462,7 +462,7 @@ p {
         position: absolute;
         bottom: -3.3333333333rem; } }
     @media screen and (max-width: 480px) {
-      /* line 9, section-benefits/section-benefits.scss */
+      /* line 8, section-benefits/section-benefits.scss */
       .section-benefits::before {
         background: none; } }
 
@@ -534,7 +534,7 @@ p {
       .benefits-list .benefits-item {
         display: flex;
         justify-content: space-between;
-        padding: 0 0 34px 0; } }
+        padding: 0 0 0.8333333333rem 0; } }
     /* line 39, section-benefits/benefits.scss */
     .benefits-list .benefits-item .benefits-image {
       margin-bottom: 3.0555555556rem; }
@@ -572,7 +572,7 @@ p {
       @media screen and (max-width: 480px) {
         /* line 76, section-benefits/benefits.scss */
         .benefits-list .benefits-item .benefits-text .benefits-title {
-          margin-left: 18px; } }
+          margin-left: 1rem; } }
     /* line 86, section-benefits/benefits.scss */
     .benefits-list .benefits-item .benefits-text .benefits-desc {
       line-height: 1.2; }
@@ -638,17 +638,17 @@ p {
 .reviews {
   display: flex;
   flex-direction: column; }
-  /* line 7, section-reviews/reviews.scss */
+  /* line 5, section-reviews/reviews.scss */
   .reviews .reviews-main {
     margin-left: 6.8333333333rem;
     margin-right: 6.6666666667rem;
     margin-bottom: 4.4444444444rem; }
     @media screen and (max-width: 768px) {
-      /* line 7, section-reviews/reviews.scss */
+      /* line 5, section-reviews/reviews.scss */
       .reviews .reviews-main {
         margin-left: 0;
         margin-right: 0; } }
-    /* line 17, section-reviews/reviews.scss */
+    /* line 15, section-reviews/reviews.scss */
     .reviews .reviews-main::after {
       content: "";
       background: url(../../img/section-reviews/reviews-background/pattern.svg) top/65% no-repeat;
@@ -659,84 +659,84 @@ p {
       right: 30%;
       z-index: 30; }
       @media screen and (max-width: 768px) {
-        /* line 17, section-reviews/reviews.scss */
+        /* line 15, section-reviews/reviews.scss */
         .reviews .reviews-main::after {
           right: 0;
           top: 22.2222222222rem; } }
       @media screen and (max-width: 480px) {
-        /* line 17, section-reviews/reviews.scss */
+        /* line 15, section-reviews/reviews.scss */
         .reviews .reviews-main::after {
-          top: 27%;
+          top: 22%;
           right: -8%; } }
-    /* line 48, section-reviews/reviews.scss */
+    /* line 36, section-reviews/reviews.scss */
     .reviews .reviews-main .reviews-main_list {
       position: relative;
       z-index: 40; }
-      /* line 52, section-reviews/reviews.scss */
+      /* line 40, section-reviews/reviews.scss */
       .reviews .reviews-main .reviews-main_list .reviews-main_item {
         position: static;
         opacity: 1;
         pointer-events: unset; }
-        /* line 57, section-reviews/reviews.scss */
+        /* line 45, section-reviews/reviews.scss */
         .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
           flex-wrap: wrap;
           display: flex; }
           @media screen and (max-width: 768px) {
-            /* line 57, section-reviews/reviews.scss */
+            /* line 45, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner {
               flex-direction: column;
               align-items: center;
               text-align: center; } }
-          /* line 67, section-reviews/reviews.scss */
+          /* line 55, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
             width: 14.1111111111rem;
             height: 14.4444444444rem;
             margin-right: 1.1111111111rem; }
             @media screen and (max-width: 768px) {
-              /* line 67, section-reviews/reviews.scss */
+              /* line 55, section-reviews/reviews.scss */
               .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
                 width: 20%;
                 height: 20%;
                 margin-right: 0; } }
             @media screen and (max-width: 480px) {
-              /* line 67, section-reviews/reviews.scss */
+              /* line 55, section-reviews/reviews.scss */
               .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar {
                 width: 27%;
                 height: 20%;
                 margin-right: 0; } }
-            /* line 84, section-reviews/reviews.scss */
+            /* line 72, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-avatar_img {
               display: flex;
               object-fit: cover;
               width: 100%;
               height: 100%; }
-          /* line 92, section-reviews/reviews.scss */
+          /* line 80, section-reviews/reviews.scss */
           .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content {
             flex: 1; }
-            /* line 95, section-reviews/reviews.scss */
+            /* line 83, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_title {
               padding-top: 0.5555555556rem;
               font-size: 1.6111111111rem;
               font-weight: bold;
               padding-bottom: 1.0555555556rem; }
-            /* line 102, section-reviews/reviews.scss */
+            /* line 90, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
               line-height: 1.2;
               padding: 0 8.3333333333rem 0.3888888889rem 0; }
               @media screen and (max-width: 768px) {
-                /* line 102, section-reviews/reviews.scss */
+                /* line 90, section-reviews/reviews.scss */
                 .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_text {
                   padding: 0; } }
-            /* line 111, section-reviews/reviews.scss */
+            /* line 99, section-reviews/reviews.scss */
             .reviews .reviews-main .reviews-main_list .reviews-main_item .reviews-main_inner .reviews-content .reviews-content_author {
               font-size: 1rem;
               font-weight: bold; }
-  /* line 122, section-reviews/reviews.scss */
+  /* line 110, section-reviews/reviews.scss */
   .reviews .reviews-footer_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    /* line 127, section-reviews/reviews.scss */
+    /* line 115, section-reviews/reviews.scss */
     .reviews .reviews-footer_list .reviews-footer_item {
       position: relative;
       width: 4.5555555556rem;
@@ -746,24 +746,24 @@ p {
       overflow: hidden;
       cursor: pointer; }
       @media screen and (max-width: 480px) {
-        /* line 127, section-reviews/reviews.scss */
+        /* line 115, section-reviews/reviews.scss */
         .reviews .reviews-footer_list .reviews-footer_item {
           width: 3.3888888889rem;
           height: 3.3888888889rem;
           margin-right: 0.6666666667rem; }
-          /* line 141, section-reviews/reviews.scss */
+          /* line 129, section-reviews/reviews.scss */
           .reviews .reviews-footer_list .reviews-footer_item:last-child {
             margin-right: 0; } }
-      /* line 146, section-reviews/reviews.scss */
+      /* line 134, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item.active {
         border-color: #365A49; }
-      /* line 150, section-reviews/reviews.scss */
+      /* line 138, section-reviews/reviews.scss */
       .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link {
         display: flex;
         position: absolute;
         width: 100%;
         height: 100%; }
-        /* line 156, section-reviews/reviews.scss */
+        /* line 144, section-reviews/reviews.scss */
         .reviews .reviews-footer_list .reviews-footer_item .interactive-avatar_link .interactive-avatar_img {
           width: 100%;
           height: 100%;
@@ -816,7 +816,8 @@ p {
     /* line 1, section-form/form-cap.scss */
     .form-cap {
       text-align: center;
-      font-size: 2.2777777778rem; } }
+      font-size: 2.2777777778rem;
+      margin-bottom: 0; } }
 
 /* line 1, section-form/form.scss */
 .form {
@@ -947,48 +948,55 @@ p {
 
 /* line 1, section-map/section-map.scss */
 .section-map {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: end; }
 
 /* line 1, section-map/map.scss */
 .map {
-  background-color: #fff;
-  height: 100vh; }
+  background-color: #fff; }
 
 /* line 1, section-map/footer.scss */
 .footer-content {
   display: flex;
   justify-content: space-between;
   background-color: #fff; }
-  /* line 6, section-map/footer.scss */
+  @media screen and (max-width: 480px) {
+    /* line 1, section-map/footer.scss */
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.2777777778rem; } }
+  /* line 12, section-map/footer.scss */
   .footer-content .footer-contacts {
     margin-left: 4.4444444444rem;
     display: flex;
     flex-direction: column; }
     @media screen and (max-width: 480px) {
-      /* line 6, section-map/footer.scss */
+      /* line 12, section-map/footer.scss */
       .footer-content .footer-contacts {
         margin-left: 0; } }
-    /* line 15, section-map/footer.scss */
+    /* line 21, section-map/footer.scss */
     .footer-content .footer-contacts .footer-contacts_address {
       font-size: 1.1666666667rem;
       font-style: normal; }
-    /* line 20, section-map/footer.scss */
+    /* line 26, section-map/footer.scss */
     .footer-content .footer-contacts .footer-phone {
       display: flex; }
 
-/* line 26, section-map/footer.scss */
+/* line 32, section-map/footer.scss */
 .phone-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 0.2777777778rem; }
-  /* line 32, section-map/footer.scss */
+  /* line 38, section-map/footer.scss */
   .phone-icon .phone-svg {
     fill: #497870; }
 
-/* line 37, section-map/footer.scss */
+/* line 43, section-map/footer.scss */
 .footer-link {
   font-size: 1.1666666667rem;
   text-decoration: none;

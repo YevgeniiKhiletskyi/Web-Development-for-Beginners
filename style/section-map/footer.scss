@@ -3,6 +3,12 @@
   justify-content: space-between;
   background-color: #fff;
 
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(5px);
+  }
+
   .footer-contacts {
     margin-left: rem(80px);
     display: flex;
