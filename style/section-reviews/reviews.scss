@@ -14,7 +14,7 @@
    
     &::after {
       content: "";
-      background: url(../img/section-reviews/reviews-background/pattern.svg) top/ 65% no-repeat;
+      background: url(../img/section-reviews/reviews-background/pattern.png) top/ 65% no-repeat;
       position: absolute;
       width: rem(200px);
       height: rem(200px);
@@ -29,7 +29,7 @@
 
       @include phones {
         top: 22%;
-        right: -8%;
+        right: -11%;
       }
     }
 
